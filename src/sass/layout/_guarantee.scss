@@ -1,0 +1,93 @@
+.guarantee__wrapper.container{
+        background-color: var(--secondary-light-gray);
+}
+.guarantee__list {
+    position: relative;
+    &::after {
+        content: '';
+        display: inline-block;
+        border-left: 1px dashed var(--color-light-grey);
+        position: absolute;
+        width: 1px;
+        height: 54%;
+        top: 51px;
+        left: 7px;
+        z-index: 1;
+    }
+}
+.guarantee__title {
+    padding-bottom: 40px;
+    @include font (800, 26px, 34px);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--colir-black);
+}
+.guarantee__item {
+    position: relative;
+    list-style: none;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 14px;
+        height: 20px;
+        background-image: url('../images/icon-grnt-campfire.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+}
+.guarantee__item-desc {
+    margin-left: 20px;
+    @include font (500, 12px, 20px);
+    color: var(--color-dark-grey);
+}
+.guarantee__item-accent {
+    @include font (500, 12px, 20px);
+    color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px){
+
+.guarantee__wrapper.container {
+    background-color: var(--color-white);
+}
+.guarantee__list {
+    background-color: var(--secondary-light-gray);
+        padding-left: 87px;
+        padding-right: 58px;
+        &::after {
+            left: 94px;
+}
+}
+.guarantee__item-desc {
+    margin-left: 25px;
+}
+}
+
+@media screen and (min-width: 1680px){
+    .guarantee__title {
+        @include font (800, 46px, 60px);
+    }
+    .guarantee__item-desc {
+        margin-left: 30px;
+        @include font (500, 20px, 28px);
+    }
+    .guarantee__item-accent {
+        @include font (500, 20px, 28px);
+}
+.guarantee__list {
+    background-color: var(--secondary-light-gray);
+    padding-left: 280px;
+    padding-right: 280px;
+
+    &::after {
+        height: 50%;
+        top: 93px;
+        left: 286px;
+    }
+}
+}
