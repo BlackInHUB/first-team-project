@@ -65,6 +65,15 @@
         margin-bottom: 40px;
     }
 
+    .aboute__wrapper {
+        display: flex;
+    }
+
+    .about-text__wrapper {
+        max-width: 402px;
+        margin-left: auto;
+    }
+
     .about-list__item:not(:last-child) {
         margin-bottom: 34px;
     }
@@ -96,6 +105,11 @@
     .section__subtitle_aboute {
         padding-bottom: 16px;
         margin-bottom: 32px;
+    }
+
+    .about-text__wrapper {
+        max-width: 668px;
+        margin-left: 172px;
     }
 
     .about-list__text {
