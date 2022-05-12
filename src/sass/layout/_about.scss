@@ -21,21 +21,21 @@
     display: block;
 
     font-family: var(--primary-font-family);
-    @include font (700, 20px, 16.5px);
+    @include font (700, 20px, 33px);
     
     color: var(--accent-color);
     margin-bottom: 8px;
 }
 
-.about-text-list {
-    margin-bottom: 8px;
-}
-
-.about-text-list__text {
+.about__text {
     font-family: var(--primary-font-family);
     @include font (500, 12px, 20px);
 
     color: var(--color-light-grey);
+}
+
+.about__text_end {
+    margin-bottom: 8px;
 }
 
 .aboute__link {
@@ -86,11 +86,11 @@
         margin-bottom: 4px;
     }
 
-    .about-text-list {
+    .about__text_end {
         margin-bottom: 24px;
     }
 
-    .about-text-list__text {
+    .about__text {
         @include font (500, 10px, 20px);
     }
 }
@@ -116,16 +116,13 @@
         @include font (600, 16px, 20px);
     }
 
-    .about-text-list {
-        margin-bottom: 52px;
-    }
-
-    .about-text-list__item:not(:last-child) {
+    .about__text {
         margin-bottom: 24px;
+        @include font (500, 18px, 28px);
     }
 
-    .about-text-list__text {
-        @include font (500, 18px, 28px);
+    .about__text_end {
+        margin-bottom: 52px;
     }
 
     .aboute__link {
