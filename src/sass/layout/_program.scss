@@ -1,0 +1,129 @@
+.program {
+    padding-bottom: 604px;
+    background: var(--colir-black);
+}
+
+.program__title {
+    margin-bottom: 40px;
+    text-align: center;
+    @include font (800, 20px, 26px);
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+}
+
+.program__list {
+    padding-left: 68px;
+}
+
+.program__item {
+    margin-bottom: 40px;
+    @include font (700, 14px, 28px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.program-item__item {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    @include font (700, 12px, 20px);
+    text-transform: initial;
+    color: var(--accent-color);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.program-item-direction__list {
+    margin-top: 4px;
+}
+
+.program-item-direction__item {
+    @include font (500, 12px, 20px);
+    color: var(--color-light-grey);
+    opacity: 0.5;
+}
+
+// 768px +
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+    .program {
+        padding-top: 60px;
+        padding-bottom: 364px;
+    }
+
+    .program__title {
+        text-align: left;
+        @include font (800, 26px, 34px);
+    }
+
+    .program__list {
+        padding-left: 184px;
+    }
+
+    .program-item__list {
+        display: flex;
+    }
+
+    .program-item__item {
+        margin-bottom: 0;
+        margin-right: 32px;
+        flex-basis: calc((100% - 64px) / 3);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// 1680px +
+@media screen and (min-width: 1680px) {
+    .program {
+        padding-bottom: 237px;
+    }
+
+    .program__title {
+        margin-bottom: 136px;
+        text-align: left;
+        @include font (800, 46px, 60px);
+    }
+
+    .program__wrapper {
+        width: 1360px;
+        margin: 0 auto;
+    }
+
+    .program__list {
+        padding-left: 0;
+        display: flex;
+    }
+
+    .program__item {
+        margin-bottom: 0;
+        margin-right: 40px;
+        flex-basis: calc((100% - 160px) / 5);
+        @include font (700, 30px, 28px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .program-item__item {
+        margin-top: 24px;
+        margin-bottom: 0;
+        @include font (700, 20px, 33px);
+    }
+
+    .program-item-direction__list {
+        margin-top: 8px;
+    }
+
+    .program-item-direction__item {
+        @include font (500, 18px, 28px);
+    }
+}
