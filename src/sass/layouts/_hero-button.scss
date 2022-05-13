@@ -1,0 +1,42 @@
+.hero-button {
+  @include font(700, 12px, 15px);
+  font-family: var(--primary-font-family);
+  display: inline-block;
+  margin: 0 auto;
+  width: 278px;
+  height: 46px;
+  border-style: none;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: 2px solid var(--accent-color);
+  color: var(--color-white);
+  background-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: var(--color-white);
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-button {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+  .hero-button {
+    width: 258px;
+    height: 46px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .hero-button {
+    width: 352px;
+    height: 68px;
+  }
+}
