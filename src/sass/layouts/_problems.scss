@@ -1,0 +1,12 @@
+.ploblems{
+    position: relative;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+.ploblems__title{
+@include font(800, 24, 31);
+letter-spacing: 0.03em;
+}
+.problems__help{
+    color: var(--accent-color);
+}
