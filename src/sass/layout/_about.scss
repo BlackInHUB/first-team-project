@@ -16,16 +16,25 @@
     margin-bottom: 22px;
 }
 
-.about-list__item::before {
-    content: '';
-    display: inline-block;
-    width: 17px;
-    height: 14px;
-
-    background-image: url("../images/icon-done.svg");
-    fill: var(--accent-color);
+.about-list__item {
+    display: flex;
+    align-items: baseline;
 }
 
+.about-list__item::before {
+    content: '';
+    min-width: 17px;
+    height: 14px;
+
+    margin-right: 9px;
+
+    background-image: url("../images/icon-done.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+
+    // fill: var(--accent-color);
+}
 
 .overtitle::before {
     content: '—';
@@ -139,6 +148,13 @@
     .aboute__link {
         @include font (500, 18px, 28px);
     }
+
+    .about-list__item::before {
+        min-width: 24.4px;
+        height: 20px;
+    
+        margin-right: 35px;
+}
 }
 
 
