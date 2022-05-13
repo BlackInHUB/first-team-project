@@ -1,3 +1,24 @@
+.nav-list {
+    display: flex;
+}
+
+.nav-list__item {
+    margin-right: 40px;
+}
+
+.nav-list__item-link {
+    @include font (700, 14px, 17px);
+    text-transform: uppercase;
+    color: var(--color-light-grey);
+    transition: color 250ms lin;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+// MOBILE
 @media screen and (max-width: 1679px) {
     .nav-list {
         display: none;
@@ -6,6 +27,9 @@
 
 @media screen and (max-width: 767px) {
     .consultation-btn {
+        display: none;
+    }
+    .logo__icon_tablet {
         display: none;
     }
 }
@@ -23,4 +47,52 @@
 
 .burger-menu-btn__icon {
     fill: #000000;
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+    .header {
+        padding-top: 40px;
+    }
+
+    .logo__icon_mobile {
+        display: none;
+    }
+
+    .logo__icon_tablet {
+        display: block;
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.consultation-btn {
+    @include font (700, 14px, 17px);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    padding: 15px 5px;
+    border: 2px solid var(--accent-color);
+    margin-right: 40px;
+}
+
+// DESKTOP
+@media screen and (min-width: 1680px) {
+    .burger-menu-btn {
+        display: none;
+    }
+
+    .consultation-btn {
+        padding: 26px 24px;
+        margin-right: 0;
+    }
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
 }
