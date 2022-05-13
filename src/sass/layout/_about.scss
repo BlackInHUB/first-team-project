@@ -16,6 +16,17 @@
     margin-bottom: 22px;
 }
 
+.about-list__item::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 14px;
+
+    background-image: url("../images/icon-done.svg");
+    fill: var(--accent-color);
+}
+
+
 .overtitle::before {
     content: '—';
     display: block;
