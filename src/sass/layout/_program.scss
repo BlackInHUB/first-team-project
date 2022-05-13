@@ -26,11 +26,14 @@
 }
 
 .program-item__item {
-    margin-top: 4px;
     margin-bottom: 4px;
     @include font (700, 12px, 20px);
     text-transform: initial;
     color: var(--accent-color);
+
+    &:first-child {
+        margin-top: 4px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -68,6 +71,7 @@
     }
 
     .program-item__item {
+        margin-top: 4px;
         margin-bottom: 0;
         margin-right: 32px;
         flex-basis: calc((100% - 64px) / 3);
@@ -114,6 +118,10 @@
         margin-top: 24px;
         margin-bottom: 0;
         @include font (700, 20px, 33px);
+
+        &:first-child {
+            margin-top: 24px;
+        }
     }
 
     .program-item-direction__list {
