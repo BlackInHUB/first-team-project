@@ -29,13 +29,18 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-white);
+<<<<<<< Updated upstream
     padding-left: 20px;
+=======
+    // background-color: #fff;
+>>>>>>> Stashed changes
 
     &:last-child {
         margin-bottom: 0;
     }
 
     &::before {
+<<<<<<< Updated upstream
         position: absolute;
         display: inline-flex;
         content: "";
@@ -52,6 +57,14 @@
         
 
         
+=======
+        content: "";
+        margin-right: 20px;
+        width: 12px;
+        height: 12px;
+        background-size: contain;
+        background-image: url(../../images/ellipse.svg);
+>>>>>>> Stashed changes
     }
 }
 
