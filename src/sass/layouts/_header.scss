@@ -10,7 +10,7 @@
     @include font (700, 14px, 17px);
     text-transform: uppercase;
     color: var(--color-light-grey);
-    transition: color 250ms lin;
+    transition: color 250ms linear;
 
     &:hover,
     &:focus {
