@@ -1,0 +1,26 @@
+@media screen and (max-width: 1679px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .consultation-btn {
+        display: none;
+    }
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.burger-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+}
+
+.burger-menu-btn__icon {
+    fill: #000000;
+}
