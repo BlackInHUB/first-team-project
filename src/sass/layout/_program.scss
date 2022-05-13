@@ -3,11 +3,9 @@
     background: var(--color-black);
 }
 
-.program__title {
+.section-title_color {
     margin-bottom: 40px;
     text-align: center;
-    @include font (800, 20px, 26px);
-    letter-spacing: 0.03em;
     color: var(--color-white);
 }
 
@@ -56,10 +54,10 @@
         padding-bottom: 364px;
     }
 
-    .program__title {
+    .section-title_color {
         text-align: left;
-        @include font (800, 26px, 34px);
     }
+
 
     .program__list {
         padding-left: 184px;
@@ -86,10 +84,9 @@
         padding-bottom: 237px;
     }
 
-    .program__title {
+    .section-title_color {
         margin-bottom: 136px;
         text-align: left;
-        @include font (800, 46px, 60px);
     }
 
     .program__wrapper {
