@@ -49,6 +49,19 @@
     fill: #000000;
 }
 
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(17, 21, 24, 0.9);
+}
+
+.mobile-menu__close-icon {
+    fill: var(--color-white);
+}
+
+
 // TABLET
 @media screen and (min-width: 768px) {
     .header {
