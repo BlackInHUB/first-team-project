@@ -58,10 +58,28 @@
     margin-bottom: 8px;
 }
 
-.aboute__link {
+// .aboute__link {
+//     display: block;
+//     margin: 0;
+//     padding: 0;
+
+//     font-family: var(--primary-font-family);
+//     @include font (500, 12px, 20px);
+//     color: var(--accent-color);
+// }
+
+.aboute__button {
+    padding: 0;
+    border: none;
+
     font-family: var(--primary-font-family);
     @include font (500, 12px, 20px);
+    
+    text-align: left;
     color: var(--accent-color);
+    background-color: transparent;
+    
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -143,7 +161,7 @@
     }
 
     .about__text {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
         @include font (500, 18px, 28px);
     }
 
@@ -151,7 +169,12 @@
         margin: 0;
     }
 
-    .aboute__link {
+    // .aboute__link {
+    //     margin-top: auto;
+    //     @include font (500, 18px, 28px);
+    // }
+
+    .aboute__button {
         margin-top: auto;
         @include font (500, 18px, 28px);
     }

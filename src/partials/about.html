@@ -49,7 +49,7 @@
           </li>
         </ul>
 
-        <p class="overtitle"> </p>
+        <p class="overtitle"></p>
         <p class="about__text">
           Graduated from the Institute of International Relations of the NAU with a degree in
           translator-analyst.
@@ -65,8 +65,35 @@
           (University of Houston)
         </p>
 
-        <a class="aboute__link" href="" data-modal-open>Cambrige English Entry Level Certificate</a>
+        <button type="button" class="aboute__button" data-modal-open><u>Cambrige English Entry Level Certificate</u></button>
+
+        <!-- <a class="aboute__link" href="" data-modal-open>Cambrige English Entry Level Certificate</a> -->
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- MODAL Certificate -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="certificate-wrap">
+    <button type="button" class="cross" data-modal-close>
+      <svg width="18" height="18" class="cross__icon">
+        <use href="./images/sprite.svg#cross"></use>
+      </svg>
+    </button>
+
+      <picture>
+        <source srcset="../src/images/certificate-1000.webp" type="image/webp"
+          media="(min-width: 768px)" />
+        <source srcset="../src/images/certificate-1000.jpg"
+          media="(min-width: 768px)" />
+        <source srcset="../src/images/certificate-500.webp" type="image/webp"
+          media="(max-width: 767px)" />
+        <source srcset="../src/images/certificate-500.jpg" media="(max-width: 767px)" />
+        <img class="certificate__images" src="../src/images/certificate-500.jpg" alt="Certificate of English teacher Elena Moreva" />
+      </picture>
+
+  </div>
+</div>
