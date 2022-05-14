@@ -6,9 +6,14 @@
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/visually-hidden';
 
 @import './base/common';
 @import './base/container';
 
 @import './layouts/section-title';
 @import './layouts/program';
+@import './layouts/header';
+@import './layout/about';
+@import './layouts/modal-certificate';
+
