@@ -1,4 +1,5 @@
 .program {
+    padding-bottom: 145px;
     background: var(--color-black);
 }
 
@@ -11,13 +12,33 @@
 .semester {
     position: relative;
     padding-left: 47px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 176px;
+        height: 137px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/program-pic-mobile.jpg);
+        left: 155px;
+        bottom: -105px;
+    }
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+      .semester::after {
+        background-image: url(../images/program-pic-mobile@2x.jpg);
+      }
+  }
 
 //from 0 to 1679px
 @media screen and (max-width: 1679px) {
     .semester::before {
-        content: '';
         position: absolute;
+        content: '';
         border-left: 1px solid var(--color-white);
         top: 10px; 
         bottom: 85px;
@@ -79,7 +100,7 @@
 @media screen and (min-width: 768px) and (max-width: 1679px) {
     .program {
         padding-top: 60px;
-        padding-bottom: 80px;
+        padding-bottom: 180px;
     }
 
     .section-title_color {
@@ -88,8 +109,24 @@
 
     .semester {
         padding-left: 88px;
+
+        &::after {
+            width: 368px;
+            height: 268px;
+            background-image: url(../images/program-pic-tablet.jpg);
+            left: 390px;
+            bottom: -110px;
+        }
     }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .semester::after {
+        background-image: url(../images/program-pic-tablet@2x.jpg);
+      }
+  }
+        
     .semester__item {
         padding-left: 113px;
     }
@@ -114,7 +151,7 @@
 @media screen and (min-width: 1680px) {
     .program {
         position: relative;
-        padding-bottom: 70px;
+        padding-bottom: 436px;
     }
 
     .program::before {
@@ -138,7 +175,23 @@
     .semester {
         padding-left: 0;
         display: flex;
+
+        &::after {
+            width: 772px;
+            height: 510px;
+            background-image: url(../images/program-pic-desktop.jpg);
+            left: -165px;
+            bottom: -335px;
+        }
     }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .semester::after {
+        background-image: url(../images/program-pic-desktop2x.jpg);
+      }
+  }
 
     .semester__item {
         padding-left: 0;
