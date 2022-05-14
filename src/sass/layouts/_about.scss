@@ -13,7 +13,7 @@
 }
 
 .about-list__item:not(:last-child) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .about-list__item {
@@ -50,7 +50,7 @@
 .about__text {
     font-family: var(--primary-font-family);
     @include font (500, 12px, 20px);
-
+    
     color: var(--color-light-grey);
 }
 
@@ -94,6 +94,10 @@
         margin-left: auto;
     }
 
+    .about-list {
+        margin-bottom: 33px;
+    }
+
     .about-list__item:not(:last-child) {
         margin-bottom: 34px;
     }
@@ -106,12 +110,12 @@
         margin-bottom: 4px;
     }
 
-    .about__text_end {
-        margin-bottom: 24px;
-    }
-
     .about__text {
         @include font (500, 10px, 20px);
+    }
+
+    .about__text_end {
+        margin-bottom: 24px;
     }
 }
 
@@ -128,6 +132,8 @@
     }
 
     .about-text__wrapper {
+        display: flex;
+        flex-direction: column;
         max-width: 668px;
         margin-left: 172px;
     }
@@ -137,16 +143,21 @@
     }
 
     .about__text {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
         @include font (500, 18px, 28px);
     }
 
     .about__text_end {
-        margin-bottom: 52px;
+        margin: 0;
     }
 
     .aboute__link {
+        margin-top: auto;
         @include font (500, 18px, 28px);
+    }
+
+    .about-list {
+        margin-bottom: 40px;
     }
 
     .about-list__item::before {
@@ -155,6 +166,14 @@
     
         margin-right: 35px;
 }
+
+    .about-list__item:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .overtitle::before {
+        margin-bottom: 12px;
+    }
 }
 
 
