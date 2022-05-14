@@ -19,8 +19,9 @@
 }
 
 .guarantee .section-title {
+    @include font (800, 26px, 34px);
     text-align: center;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .guarantee-list__item {
@@ -44,7 +45,7 @@
 }
 
 .guarantee-list__item-desc {
-    margin-left: 20px;
+    margin-left: 34px;
     @include font (500, 12px, 20px);
     color: var(--color-dark-grey);
 }
@@ -62,22 +63,31 @@
 
     .guarantee-list {
         background-color: var(--secondary-light-gray);
-        padding-left: 87px;
+        padding-top: 32px;
         padding-right: 58px;
+        padding-bottom: 32px;
+        padding-left: 87px;
 
         &::after {
             left: 94px;
         }
     }
-
+.guarantee-list__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
     .guarantee-list__item-desc {
-        margin-left: 25px;
+        margin-left: 39px;
     }
 }
 
 @media screen and (min-width: 1680px) {
+
+    .guarantee .section-title {
+        @include font (800, 46px, 60px);
+        }
+
     .guarantee-list__item-desc {
-        margin-left: 30px;
+        margin-left: 52px;
         @include font (500, 20px, 28px);
     }
 
@@ -87,13 +97,16 @@
 
     .guarantee-list {
         background-color: var(--secondary-light-gray);
-        padding-left: 280px;
-        padding-right: 280px;
+        padding: 60px 280px;
 
         &::after {
             height: 50%;
             top: 80px;
-            left: 286px;
+            left: 290px;
         }
     }
+        .guarantee-list__item::before {
+                width: 22px;
+                height: 30px;
+            }
 }
