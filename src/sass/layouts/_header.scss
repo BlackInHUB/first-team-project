@@ -10,6 +10,7 @@
     @include font (700, 14px, 17px);
     text-transform: uppercase;
     color: var(--color-light-grey);
+    padding: 25px 0;
     transition: color 250ms linear;
 
     &:hover,
@@ -171,6 +172,7 @@
     .mobile-nav {
         margin-top: 80px;
         margin-left: 184px;
+        margin-bottom: 0;
     }
 
     .mobile-nav__item-link {
@@ -199,7 +201,7 @@
     }
 
     .consultation-btn {
-        padding: 26px 24px;
+        padding: 25px 47px;
         margin-right: 0;
     }
 }
