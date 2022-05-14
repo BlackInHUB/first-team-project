@@ -1,0 +1,39 @@
+.footer{
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.footer-logo{
+    margin-bottom: 20px;
+}
+
+.footer-contacts__icon{
+    display: none;
+}
+
+.footer-contacts__icon-tel{
+    width: 20px;
+    height: 19px;
+
+    fill: var(--accent-color);
+}
+
+.footer-item{
+    margin-bottom: 20px;
+}
+
+.footer-contacts__link{
+    @include font(600, 14px, 17px);
+    letter-spacing: 0.08em;
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 767px){
+    .footer-contacts__icon {
+        display: block;
+    }
+
+    .footer-contacts__icon-tablet{
+        display: none;
+    }
+}
