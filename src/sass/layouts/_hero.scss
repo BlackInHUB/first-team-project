@@ -5,6 +5,9 @@
 }
 
 .hero-gradient {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,6 +41,7 @@
   .hero-section {
     flex-wrap: wrap;
     align-content: center;
+    margin-bottom: 40px;
   }
 
   .hero-section__title {
@@ -50,8 +54,9 @@
   }
 
   .hero-gradient {
-    min-height: 582px;
+    max-height: 582px;
     background-image: url('../images/mobile-vector.png');
+    background-position-y: -300px;
   }
 
   @media (min-device-pixel-ratio: 0), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -67,8 +72,9 @@
     width: 332px;
   }
   .hero-gradient {
-    min-height: 533px;
+    max-height: 533px;
     background-image: url('../images/tablet-vector.png');
+    background-position-y: -125px;
   }
 
   @media (min-device-pixel-ratio: 0), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -96,10 +102,12 @@
     color: var(--colir-black);
     display: inline-block;
   }
+
   .hero-gradient {
-    min-height: 874px;
+    max-width: 1680px;
+    max-height: 874px;
     background-image: url('../images/desktop-vector.png');
-    // background-position-y: -270px;
+    background-position-y: -100px;
   }
 
   @media (min-device-pixel-ratio: 0), (min-resolution: 192dpi), (min-resolution: 2dppx) {
