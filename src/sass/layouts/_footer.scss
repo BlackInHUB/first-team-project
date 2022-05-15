@@ -57,12 +57,30 @@
     }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 768px) {
     .footer{
         display: flex;
     }
 
     .footer-list{
         display: flex;
+        align-items: center;
     }
+
+    .footer-item:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .footer-contacts__link-border{
+        padding-right: 24px;
+        border-right: 1px solid #B9B9B9;
+    }
+
+    .footer-contacts__icon-inst{
+        margin-bottom: 0;
+        margin-left: 24px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
 }
