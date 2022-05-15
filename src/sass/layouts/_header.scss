@@ -27,7 +27,7 @@
     padding: 15px 5px;
     border: 2px solid var(--accent-color);
     margin-right: 40px;
-    transition: color 250ms linear;
+    transition: color 250ms linear, background-color 250ms linear;
 
     &:hover,
     &:focus {
@@ -90,6 +90,7 @@
 
 .mobile-menu {
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     padding-top: 20px;
