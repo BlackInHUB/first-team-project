@@ -8,7 +8,7 @@
     padding-left: 5px;
 }
 
-.doit-list__caption {
+.doit-list__item-caption {
     margin-bottom: 40px;
     @include font (700, 14px, 20px);
     text-align: center;
@@ -16,7 +16,7 @@
     color: var(--color-black);
 }
 
-.doit-list__desc {
+.doit-list__item-desc {
     position: relative;
     @include font (500, 12px, 20px);
     text-align: center;
@@ -35,7 +35,7 @@
     }
 }
 
-.doit-list__icon {
+.doit-list__item-icon {
     display: block;
     margin-right: auto;
     margin-bottom: 20px;
@@ -58,13 +58,13 @@
 
     &:hover {
         background-color: var(--accent-color);
-        & .doit-list__icon {
+        & .doit-list__item-icon {
             fill: var(--color-white);
         }
-        & .doit-list__caption {
+        & .doit-list__item-caption {
             color: var(--color-white);
         }
-        & .doit-list__desc {
+        & .doit-list__item-desc {
             color: var(--color-white);
             &::before {
                 content: '';
@@ -74,7 +74,8 @@
 
     }
 }
-.indent {
+.doit-list__item-caption_indent,
+.doit-list__item-desc_indent {
     display: block;
 }
 @media screen and (max-width: 767px) {
@@ -106,15 +107,15 @@
         flex-basis: calc((100% - 32px)/2);
     }
 
-    .doit-list__icon {
+    .doit-list__item-icon {
         margin-bottom: 32px;
     }
 
-    .doit-list__caption {
+    .doit-list__item-caption {
         margin-bottom: 48px;
     }
 
-    .doit-list__desc::before {
+    .doit-list__item-desc::before {
         top: -24px;
     }
 }
@@ -158,12 +159,12 @@
 
     }       
 
-    .doit-list__caption {
+    .doit-list__item-caption {
         @include font (700, 20px, 28px);
         margin-bottom: 40px;
     }
 
-    .doit-list__desc {
+    .doit-list__item-desc {
         @include font (500, 18px, 28px);
         &::before {
             top: -20px;
