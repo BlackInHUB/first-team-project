@@ -20,7 +20,7 @@
         height: 137px;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url(../images/program-pic-mobile.jpg);
+        background-image: url(../images/program-pic-mobile.png);
         left: 155px;
         bottom: -105px;
     }
@@ -30,7 +30,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
       .semester::after {
-        background-image: url(../images/program-pic-mobile@2x.jpg);
+        background-image: url(../images/program-pic-mobile@2x.png);
       }
   }
 
@@ -72,18 +72,10 @@
 }
 
 .direction__item {
-    margin-bottom: 4px;
+    margin-top: 4px;
     @include font (700, 12px, 20px);
     text-transform: initial;
     color: var(--accent-color);
-
-    &:first-child {
-        margin-top: 4px;
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 .subject {
@@ -113,7 +105,7 @@
         &::after {
             width: 368px;
             height: 268px;
-            background-image: url(../images/program-pic-tablet.jpg);
+            background-image: url(../images/program-pic-tablet.png);
             left: 390px;
             bottom: -110px;
         }
@@ -123,7 +115,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       .semester::after {
-        background-image: url(../images/program-pic-tablet@2x.jpg);
+        background-image: url(../images/program-pic-tablet@2x.png);
       }
   }
         
@@ -136,8 +128,6 @@
     }
 
     .direction__item {
-        margin-top: 4px;
-        margin-bottom: 0;
         margin-right: 32px;
         flex-basis: calc((100% - 64px) / 3);
 
@@ -179,7 +169,7 @@
         &::after {
             width: 772px;
             height: 510px;
-            background-image: url(../images/program-pic-desktop.jpg);
+            background-image: url(../images/program-pic-desktop.png);
             left: -165px;
             bottom: -335px;
         }
@@ -189,7 +179,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       .semester::after {
-        background-image: url(../images/program-pic-desktop2x.jpg);
+        background-image: url(../images/program-pic-desktop@2x.png);
       }
   }
 
@@ -214,12 +204,7 @@
 
     .direction__item {
         margin-top: 24px;
-        margin-bottom: 0;
         @include font (700, 20px, 33px);
-
-        &:first-child {
-            margin-top: 24px;
-        }
     }
 
     .subject{
