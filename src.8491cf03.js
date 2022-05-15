@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/icon-done.svg":[["icon-done.043540eb.svg","VJuM"],"VJuM"],"./../images/icon-grnt-campfire.svg":[["icon-grnt-campfire.77f370b2.svg","n54V"],"n54V"],"./../images/mobile-vector.png":[["mobile-vector.3bbd9767.png","YmHy"],"YmHy"],"./../images/mobile-vector@2x.png":[["mobile-vector@2x.58cc1de2.png","lo7q"],"lo7q"],"./../images/tablet-vector.png":[["tablet-vector.d659d1da.png","VrII"],"VrII"],"./../images/tablet-vector@2x.png":[["tablet-vector@2x.7a2c0ca5.png","NNXj"],"NNXj"],"./../images/desktop-vector.png":[["desktop-vector.ca1883c4.png","NSuA"],"NSuA"],"./../images/desktop-vector@2x.png":[["desktop-vector@2x.8aecaf78.png","NmQm"],"NmQm"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/first-team-project/src.f5a7efbf.js.map
+//# sourceMappingURL=/first-team-project/src.8491cf03.js.map
