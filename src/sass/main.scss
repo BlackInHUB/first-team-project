@@ -10,27 +10,16 @@
 
 @import './base/common';
 @import './base/container';
-
 @import './layouts/section-title';
-@import './layouts/program';
+
 @import './layouts/header';
+@import './layouts/hero';
+@import './layouts/hero-picture';
+@import './layouts/hero-button';
 
-
+@import './layouts/how-we-do';
+@import './layouts/program';
 
 @import './layouts/about';
 @import './layouts/modal-certificate';
 @import './layouts/guarantee';
-@import './layouts/header';
-
-
-@import './layouts/how-we-do';
-
-
-
-
-
-
-
-@import './layouts/hero';
-@import './layouts/hero-picture';
-@import './layouts/hero-button';
