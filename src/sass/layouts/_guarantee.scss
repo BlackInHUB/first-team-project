@@ -4,6 +4,8 @@
 
 .guarantee-list {
     position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
 
     &::after {
         content: '';
@@ -11,9 +13,9 @@
         border-left: 1px dashed var(--color-light-grey);
         position: absolute;
         width: 1px;
-        height: 54%;
+        height: 61%;
         top: 51px;
-        left: 7px;
+        left: 11px;
         z-index: 1;
     }
 }
@@ -45,7 +47,7 @@
 }
 
 .guarantee-list__item-desc {
-    margin-left: 34px;
+    margin-left: 35px;
     @include font (500, 12px, 20px);
     color: var(--color-dark-grey);
 }
@@ -64,12 +66,14 @@
     .guarantee-list {
         background-color: var(--secondary-light-gray);
         padding-top: 32px;
-        padding-right: 58px;
+        padding-right: 75px;
         padding-bottom: 32px;
-        padding-left: 87px;
+        padding-left: 104px;
 
         &::after {
-            left: 94px;
+            height: 55%;
+            top: 55px;
+            left: 111px;
         }
     }
 .guarantee-list__item:not(:last-child) {
@@ -100,7 +104,7 @@
         padding: 60px 280px;
 
         &::after {
-            height: 50%;
+            height: 52%;
             top: 80px;
             left: 290px;
         }
