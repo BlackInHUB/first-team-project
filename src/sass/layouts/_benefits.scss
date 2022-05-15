@@ -24,7 +24,6 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
     counter-reset: benefits-counter;
-
 }
 
 .benefits-list__item {
@@ -46,7 +45,6 @@
         counter-increment: benefits-counter;
         content: "— 0" counter(benefits-counter);
         color: var(--accent-color);
-        
     }
 }
 
@@ -87,6 +85,11 @@
 
 // 1680px +
 @media screen and (min-width: 1680px) {
+    .benefits {
+        position: absolute;
+        top: 3340px;
+    }
+    
     .benefits__section-title {
         display: none;
     }
