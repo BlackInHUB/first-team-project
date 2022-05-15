@@ -43,24 +43,22 @@
     fill: var(--accent-color);
 }
 
-.doit-list {
-    margin-bottom: -16px;
-}
-
 .doit-list__item {
     max-width: 280px;
     min-height: 280px;
     margin-right: auto;
-    margin-bottom: 16px;
     margin-left: auto;
     padding-top: 32px;
-    padding-right: 11px;
+    padding-right: 12px;
     padding-bottom: 4px;
-    padding-left: 11px;
+    padding-left: 12px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     transition: fill 250ms linear,
             color 250ms linear,
             background-color 250ms linear;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
 
     &:hover {
         background-color: var(--accent-color);
@@ -77,9 +75,12 @@
                 background-color: var(--color-white);
             }
         }
+
     }
 }
-
+.indent {
+    display: block;
+}
 @media screen and (min-width: 768px) {
     .doit .section-title {
         margin-bottom: 40px;
@@ -92,20 +93,26 @@
     .doit-list {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -32px;
-        margin-bottom: -24px;
     }
 
     .doit-list__item {
         max-width: 336px;
         min-height: 336px;
-        margin-right: 32px;
-        margin-bottom: 24px;
         padding-top: 40px;
         padding-right: 14px;
         padding-bottom: 33px;
         padding-left: 14px;
         flex-basis: calc((100% - 32px)/2);
+        &:not(:last-child) {
+            margin-bottom: unset;
+        }
+        &:nth-child(-n + 4) {
+            margin-bottom: 24px;
+        }
+        &:nth-child(2n + 1) {
+            margin-right: 32px;
+        }
+
     }
 
     .doit-list__icon {
@@ -132,20 +139,32 @@
         padding-right: 1px;
     }
 
-    .doit-list {
-        margin-right: -32px;
-        margin-bottom: -31px;
-    }
-    
     .doit-list__item {
         max-width: 528px;
         min-height: 492px;
-        margin-bottom: 31px;
         padding-top: 90px;
-        padding-right: 82px;
+        padding-right: 81px;
         padding-bottom: 91px;
         padding-left: 81px;
         flex-basis: calc((100% - 32px)/3);
+        margin: 0;
+        &:nth-child(-n + 4) {
+                margin-bottom: unset;
+            }
+        
+            &:nth-child(2n + 1) {
+                margin-right: unset;
+            }
+            &:nth-child(-n + 3) {
+                margin-bottom: 31px;
+            }
+            &:nth-child( 3n + 3) {
+                margin-left: 32px;;
+            }
+            &:nth-child(3n + 1) {
+                margin-right: 32px;
+            }
+
     }
 
     .doit-list__caption {
