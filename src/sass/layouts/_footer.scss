@@ -114,7 +114,7 @@
     }
 
     .footer-container{
-        margin-bottom: 0;
+        margin-bottom: 80px;
     }
 
     .footer-logo{
@@ -126,9 +126,13 @@
     }
 
     .footer-list__item-icon{
-        width: 24px;
-        height: 23px;
+        width: 30px;
+        height: 29px;
         margin-right: 16px;
+    }
+
+    .footer-contacts__link-border {
+        padding-right: 21px;
     }
 
     .footer-list__link{
