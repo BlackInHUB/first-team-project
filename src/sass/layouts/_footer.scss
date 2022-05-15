@@ -3,7 +3,15 @@
     text-align: center;
 }
 
+.footer{
+    background-color: var(--color-white);
+}
+
 .footer-logo{
+    display: inline-flex;
+}
+
+.footer-contacts__icon{
     margin-bottom: 20px;
 }
 
@@ -11,7 +19,11 @@
     display: none;
 }
 
-.footer-contacts__icon-tel{
+.footer-list__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-list__item-icon{
     width: 20px;
     height: 19px;
     margin-right: 8px;
@@ -19,32 +31,29 @@
     fill: var(--accent-color);
 }
 
-.footer-contacts__link {
+.footer-list__link {
+    display: inline-flex;
     @include font(600, 14px, 17px);
     letter-spacing: 0.08em;
     color: var(--color-black);
 }
 
-.footer-contacts__icon-inst{
+.footer-wrap__link {
+    @include font(500, 14px, 28px);
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.footer-list__icon-inst {
+    display: inline-flex;
     width: 40px;
     height: 40px;
     margin-bottom: 40px;
 }
 
-.footer-item:not(:last-child){
-    margin-bottom: 20px;
-}
-
 .footer-wrap{
     padding: 24px 0;
-    max-width: 100%;
     background-color: var(--color-black);
-}
-
-.footer-wrap__link{
-    @include font(600, 14px, 28px);
-    text-decoration: none;
-    color: #B9B9B9;
 }
 
 @media screen and (max-width: 767px){
@@ -58,8 +67,15 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer{
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .footer-container{
         display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     .footer-list{
@@ -67,8 +83,17 @@
         align-items: center;
     }
 
-    .footer-item:not(:last-child){
+    .footer-list__item:not(:last-child){
         margin-bottom: 0;
+    }
+
+    .footer-list__item-icon {
+        width: 24px;
+        height: 23px;
+    }
+
+    .footer-list__link {
+        @include font(null, 20px, 24px);
     }
 
     .footer-contacts__link-border{
@@ -76,11 +101,42 @@
         border-right: 1px solid #B9B9B9;
     }
 
-    .footer-contacts__icon-inst{
+    .footer-list__icon-inst{
         margin-bottom: 0;
         margin-left: 24px;
     }
 }
 
 @media screen and (min-width: 1680px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-container{
+        margin-bottom: 0;
+    }
+
+    .footer-logo{
+        position: absolute;
+    }
+
+    .footer-list{
+        margin: 0 auto;
+    }
+
+    .footer-list__item-icon{
+        width: 24px;
+        height: 23px;
+        margin-right: 16px;
+    }
+
+    .footer-list__link{
+        @include font(null, 30px, 37px);
+        display: flex;
+    }
+
+    .footer-wrap {
+        padding: 26px 0;
+    }
 }
