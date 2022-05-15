@@ -15,9 +15,7 @@ body .problems {
 .problems__title {
     margin-bottom: 24px;
 }
-.problems__icon {
-    display: none;
-}
+
 .problems__help {
     color: var(--accent-color);
 }
@@ -96,26 +94,15 @@ body .problems {
   
 
     .problems {
-        // linear-gradient(to bottom,
-        //         var(--color-black) 0 75%,
-        //         var(--color-white)75% 100%);
-
-
-        background-image: url(../images/campfire.svg);
-        background-size: 350px;
-        background-repeat: no-repeat;
-        background-position: right bottom;
+        background-image: url(../images/campfire.svg),
+        linear-gradient(to bottom,
+var(--color-black) 0 75%,
+var(--color-white)75% 100%);
+        background-size: 350px, auto;
+        background-repeat: no-repeat, no-repeat;
+        background-position: calc(650px + 50%) bottom, center;
+     
     }
-
-    // .problems__icon {
-    //     display: block;
-    //     position: absolute;
-    //     top: 88px;
-    //     right: -100px;
-    //     fill: var(--color-dark-grey);
-    //     fill-opacity: 0.5;
-
-    // }
 
    .problems-list__pre-text{
     @include font(700, 20px, 33px);
