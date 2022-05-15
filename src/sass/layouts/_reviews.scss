@@ -1,0 +1,59 @@
+.reviews-container {
+    text-align: center;
+    position: relative;
+}
+
+.feedback__title {
+    @include font (800, 20px, 26px);
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+    margin-bottom: 24px;
+}
+
+.feedback-img {
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.feedback__text {
+    padding: 0 25px;
+}
+
+.feedback__title--name {
+    @include font (800, 14px, 17px);
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.feedback__text--university {
+    @include font (500, 12px, 15px);
+    letter-spacing: 0.08em;
+    color: var(--color-light-grey);
+    margin-bottom: 16px;
+}
+
+.feedback__text--review {
+    @include font (500, 12px, 20px);
+    color: var(--color-dark-grey);
+}
+
+.feedback-link {
+    @include font (500, 12px, 20px);
+    color: var(--accent-color);
+}
+
+.feedback-pagination {
+    width: 280px;
+}
+
+.feedback-pagination__list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback-pagination__item:not(:last-child) {
+    margin-right: 12px;
+}
+
