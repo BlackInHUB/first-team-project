@@ -1,6 +1,23 @@
 .reviews-container {
     text-align: center;
     position: relative;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.feedback {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        padding: 40px 49px;
+    }
+}
+
+.feedback-foto {
+    @media screen and (min-width: 768px) {
+        margin-right: 44px;
+    }
 }
 
 .feedback__title {
@@ -8,6 +25,7 @@
     letter-spacing: 0.03em;
     color: var(--color-black);
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .feedback-img {
@@ -17,6 +35,9 @@
 
 .feedback__text {
     padding: 0 25px;
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
 }
 
 .feedback__title--name {
@@ -25,6 +46,9 @@
     color: var(--accent-color);
     margin-bottom: 16px;
     margin-top: 24px;
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .feedback__text--university {
@@ -45,15 +69,43 @@
 }
 
 .feedback-pagination {
-    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
 }
 
 .feedback-pagination__list {
     display: flex;
-    overflow: hidden;
+    justify-content: center;
+    margin: 0 22px;
+    justify-content: baseline;
 }
 
-.feedback-pagination__item:not(:last-child) {
-    margin-right: 12px;
+.feedback-pagination__item {
+    &:nth-child(-n + 2) {
+        margin-right: 15px;
+    }
+    // &:not(:last-child) {
+    //     margin-right: 12px;
+    // }
+    &:nth-child(n + 4) {
+        display: none;
+    }
+}
+
+.feedback-arrow--left {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    display: flex;
+}
+
+.feedback-arrow--right {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    display: flex;
 }
 

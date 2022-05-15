@@ -2,48 +2,43 @@
 
 <section class="reviews section">
     <div class="container reviews-container">
+        <h2 class="feedback__title">Feedback from graduates</h2>
         <div class="feedback">
-            <h2 class="feedback__title">Feedback from graduates</h2>
-            <picture>
-                <source srcset="../src/images/reviews-Tonya-mob-1x.jpg 1x,
-                ../src/images/reviews-Tonya-mob-2x.jpg 2x"
-                media="(min-width: 480px")/>
-                <source srcset="../src/images/reviews-Tonya-desktab-1x.jpg 1x,
-                ../src/images/reviews-Tonya-desktab-2x.jpg 2x"
-                media="(min-width: 768px")/>
-                <img class="feedback-img" src="../src/images/reviews-Tonya-desktab-1x.jpg" alt="Tonya"/>
-            </picture>
-            <svg class="reviews-icon" width="30" height="30">
-                <use href="../src/images/sprite.svg#icon-vk-reviews"></use>
-            </svg>
-            <h3 class="feedback__title--name">Tonya Kucherovskaya</h3>
-            <article class="feedback__text">
+            <div class="feedback-foto">
+                <picture>
+                    <source srcset="../src/images/reviews-Tonya-desktab-1x.jpg 1x,
+                    ../src/images/reviews-Tonya-desktab-2x.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source srcset="../src/images/reviews-Tonya-mob-1x.jpg 1x,
+                    ../src/images/reviews-Tonya-mob-2x.jpg 2x"
+                    media="(min-width: 480px)"/>
+                    <img class="feedback-img" src="../src/images/reviews-Tonya-mob-1x.jpg" alt="Tonya"/>
+                </picture>
+                    <svg class="reviews-icon" width="30" height="30">
+                        <use href="../src/images/sprite.svg#icon-vk-reviews"></use>
+                    </svg>
+            </div>
+            <div class="feedback-review">
+                <h3 class="feedback__title--name">Tonya Kucherovskaya</h3>
                 <p class="feedback__text--university">Graduated from 2015, National University of Bioresources
-                and natural history of Ukraine</p>
-                <span class="feedback__text--review">
-                    In a short time with Elena, I mastered grammar and replenished my 
-                    completely empty vocabulary. From the first lesson I realized that I was on my plate. 
-                    Elena and I became friends because she was really worried about my success. She became an authority for me, 
-                    but I did not tremble in class, fearing to make the slightest mistake. Now I can brag that I'm student...
-                    <a class="feedback-link" href="">Read more</a>
-                </span>
-            </article>
+                    and natural history of Ukraine</p>
+                <article class="feedback__text">
+                    <span class="feedback__text--review">
+                        In a short time with Elena, I mastered grammar and replenished my 
+                        completely empty vocabulary. From the first lesson I realized that I was on my plate. 
+                        Elena and I became friends because she was really worried about my success. She became an authority for me, 
+                        but I did not tremble in class, fearing to make the slightest mistake. Now I can brag that I'm student...
+                        <a class="feedback-link" href="">Read more</a>
+                    </span>
+                </article>
+            </div>
         </div>
-        <div class="feedback-arrow--left">
-            <button type="button" class="feedback-arrow">
+        <div class="feedback-pagination">
+            <button type="button" class="feedback-arrow--right">
                 <svg class="arrow-icon" width="30" height="30">
                     <use href="../src/images/sprite.svg#icon-Arrow-left"></use>
                 </svg>
             </button>
-        </div>
-        <div class="feedback-arrow--right">
-            <button type="button" class="feedback-arrow">
-                <svg class="arrow-icon" width="30" height="30">
-                    <use href="../src/images/sprite.svg#icon-Arrow-right"></use>
-                </svg>
-            </button>
-        </div>
-        <div class="feedback-pagination">
             <ul class="feedback-pagination__list list">
                 <li class="feedback-pagination__item">
                     <picture>
@@ -102,6 +97,11 @@
                     </picture>
                 </li>
             </ul>
+            <button type="button" class="feedback-arrow--left">
+                <svg class="arrow-icon" width="30" height="30">
+                    <use href="../src/images/sprite.svg#icon-Arrow-right"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </section>
