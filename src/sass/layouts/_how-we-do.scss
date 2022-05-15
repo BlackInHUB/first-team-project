@@ -105,7 +105,7 @@
         padding-right: 14px;
         padding-bottom: 33px;
         padding-left: 14px;
-        flex-basis: calc(100% / 2 - 32px);
+        flex-basis: calc((100% - 32px)/2);
     }
 
     .doit-list__icon {
@@ -145,7 +145,7 @@
         padding-right: 82px;
         padding-bottom: 91px;
         padding-left: 81px;
-        flex-basis: calc(100% / 3 - 32px);
+        flex-basis: calc((100% - 32px)/3);
     }
 
     .doit-list__caption {
