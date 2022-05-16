@@ -10,7 +10,7 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .section {
+    .section__contacts {
         background-image: url("/images/contacts-mobille-2x.png");
     }
 }
@@ -120,7 +120,7 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .section {
+            .section__contacts {
                 background-image: url("/images/contacts-tablet-2x.png");
             }
         }
@@ -167,7 +167,7 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .section {
+        .section__contacts {
             background-image: url("/images/contacts-desktop-2x.png");
         }
     }
