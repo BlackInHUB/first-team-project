@@ -1,4 +1,4 @@
-.advantages-services__list {
+.advantages-list__item {
   @include font(700, 14px, 23px);
   display: flex;
   align-items: center;
@@ -10,18 +10,18 @@
   }
 }
 
-.advantages-services {
+.advantages-list {
   display: flex;
 }
 
 @media screen and (max-width: 767px) {
-  .advantages-services {
+  .advantages-list {
     display: block;
   }
-  .advantages-services__list:not(:last-child) {
+  .advantages-list__item:not(:last-child) {
     margin-bottom: 24px;
   }
-  .advantages-services__icon-adapted {
+  .advantages-list__icon-adapted {
     &::before {
       display: block;
       content: '';
@@ -33,7 +33,7 @@
       margin-right: 12px;
     }
   }
-  .advantages-services__icon-modern {
+  .advantages-list__icon-modern {
     &::before {
       display: block;
       content: '';
@@ -45,7 +45,7 @@
       margin-right: 12px;
     }
   }
-  .advantages-services__icon-financial {
+  .advantages-list__icon-financial {
     &::before {
       display: block;
       content: '';
@@ -60,15 +60,15 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
-  .advantages-services__list:not(:last-child) {
+  .advantages-list__item:not(:last-child) {
     margin-right: 21px;
   }
 
-  .advantages-services__text {
+  .advantages-list__text {
     max-width: 142px;
   }
 
-  .advantages-services__icon-adapted {
+  .advantages-list__icon-adapted {
     &::before {
       display: block;
       content: '';
@@ -80,7 +80,7 @@
       margin-right: 10px;
     }
   }
-  .advantages-services__icon-modern {
+  .advantages-list__icon-modern {
     &::before {
       display: block;
       content: '';
@@ -92,7 +92,7 @@
       margin-right: 15px;
     }
   }
-  .advantages-services__icon-financial {
+  .advantages-list__icon-financial {
     &::before {
       display: block;
       content: '';
@@ -107,16 +107,16 @@
 }
 
 @media screen and (min-width: 1680px) {
-  .advantages-services__list {
+  .advantages-list__item {
     @include font(700, 20px, 33px);
     margin-right: 112px;
   }
 
-  .advantages-services__item {
+  .advantages-list__item-text {
     min-width: 366px;
   }
 
-  .advantages-services__icon-adapted {
+  .advantages-list__icon-adapted {
     &::before {
       display: block;
       content: '';
@@ -128,7 +128,7 @@
       margin-right: -15px;
     }
   }
-  .advantages-services__icon-modern {
+  .advantages-list__icon-modern {
     &::before {
       display: block;
       content: '';
@@ -140,7 +140,7 @@
       margin-right: -15px;
     }
   }
-  .advantages-services__icon-financial {
+  .advantages-list__icon-financial {
     &::before {
       display: block;
       content: '';
