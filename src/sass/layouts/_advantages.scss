@@ -18,14 +18,8 @@
   .advantages-services {
     display: block;
   }
-  .advantages-services__list {
-    display: flex;
-    align-items: center;
+  .advantages-services__list:not(:last-child) {
     margin-bottom: 24px;
-
-    &:last-child {
-      margin-bottom: 0px;
-    }
   }
   .advantages-services__icon-adapted {
     &::before {
@@ -66,7 +60,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
-  .advantages-services__list {
+  .advantages-services__list:not(:last-child) {
     margin-right: 21px;
   }
 
@@ -119,7 +113,7 @@
   }
 
   .advantages-services__item {
-    min-width: 448px;
+    min-width: 366px;
   }
 
   .advantages-services__icon-adapted {
