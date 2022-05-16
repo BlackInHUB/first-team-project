@@ -6,12 +6,11 @@
     background-image: linear-gradient(to bottom,
             var(--color-black) 0 75%,
             var(--color-white)75% 100%);
-    padding-top: 0;
-    margin-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 0;
 }
 
 .problems__title {
-    padding-top: 24px;
     margin-bottom: 24px;
 }
 
@@ -60,9 +59,11 @@
     // TABLET
 
 @media screen and (min-width: 768px) {
-
+.problems {
+    padding-top: 40px;
+}
     .problems__title {
-        padding-top: 40px;
+        
         margin-bottom: 40px;
     }
 
@@ -97,6 +98,8 @@ var(--color-white)75% 100%);
         background-repeat: no-repeat, no-repeat;
         background-position: calc(620px + 50%) 25%, center;
      }
+    .problems{
+    padding-top: 80px;}
     .problems__title {
         padding-top: 80px;
         margin-bottom: 80px;
