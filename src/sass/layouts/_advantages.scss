@@ -109,11 +109,8 @@
 @media screen and (min-width: 1680px) {
   .advantages-list__item {
     @include font(700, 20px, 33px);
-    margin-right: 112px;
-  }
-
-  .advantages-list__item-text {
-    min-width: 366px;
+    flex-basis: calc(100% / 3 - 113px);
+    margin-right: 113px;
   }
 
   .advantages-list__icon-adapted {
