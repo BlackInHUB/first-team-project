@@ -6,18 +6,6 @@
     position: relative;
     padding-left: 5px;
     padding-right: 5px;
-
-    &::after {
-        content: '';
-        display: inline-block;
-        border-left: 1px dashed var(--color-light-grey);
-        position: absolute;
-        width: 1px;
-        height: 61%;
-        top: 51px;
-        left: 11px;
-        z-index: 1;
-    }
 }
 
 .guarantee .section-title {
@@ -31,19 +19,29 @@
 
     &:not(:last-child) {
         margin-bottom: 24px;
+        &::after {
+            content: '';
+            display: inline-block;
+            border-left: 1px dashed var(--color-light-grey);
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 22px;
+            left: 7px;
+        }
     }
 
     &::before {
         content: '';
         display: block;
         position: absolute;
-        width: 14px;
+        width: 15px;
         height: 20px;
-        background-image: url('../images/icon-grnt-campfire.svg');
+        background-image: url('../images/icon-grnt-campfire-mobile.svg');
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: 2;
     }
+
 }
 
 .guarantee-list__item-desc {
@@ -70,14 +68,14 @@
         padding-bottom: 32px;
         padding-left: 104px;
 
-        &::after {
-            height: 55%;
-            top: 55px;
-            left: 111px;
-        }
     }
 .guarantee-list__item:not(:last-child) {
         margin-bottom: 20px;
+        &::after {
+            height: 90%;
+            top: 22px;
+            left: 7px;
+        }
     }
     .guarantee-list__item-desc {
         margin-left: 39px;
@@ -103,14 +101,16 @@
         background-color: var(--secondary-light-gray);
         padding: 60px 280px;
 
-        &::after {
-            height: 52%;
-            top: 80px;
-            left: 290px;
-        }
     }
-        .guarantee-list__item::before {
-                width: 22px;
-                height: 30px;
-            }
+    .guarantee-list__item:not(:last-child)::after {
+        height: 75%;
+        top: 32px;
+        left: 10px;
+    } 
+
+    .guarantee-list__item::before {
+            width: 22px;
+            height: 30px;
+            background-image: url('../images/icon-grnt-campfire.svg');
+        }
 }
