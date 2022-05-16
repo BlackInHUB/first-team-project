@@ -41,7 +41,7 @@ body .problems {
 
     color: var(--color-black);
 }
-.problems-list__item:not(:last-child){
+.problems-list__item:not(:last-child) {
     margin-bottom: 16px;
 }
 
@@ -61,9 +61,9 @@ body .problems {
 .problems-list__text {
  @include font(700, 14px, 20px);
 }
+// @media screen and (max-width: 767px) {
 
-
-@media screen and (min-width: 480px) {}
+// }
 
 @media screen and (min-width: 768px) {
 body .problems {
@@ -74,12 +74,24 @@ body .problems {
     }
 
     .problems-list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 225px 225px;
+        grid-column-gap: 40px;
+        grid-row-gap: 8px;
+    align-items: flex-start;
+       
 
-        padding: 0;
+        padding-top: 32px;
+        padding-right: 98px;
+        padding-bottom: 32px;
+        padding-left: 97px;
     }
-  
+  .problems-list__pre-text {
+      margin-bottom: 4px;
+    }
+        .problems-list__item:not(:last-child) {
+            margin-bottom: 0;
+        }
   
 }
 
@@ -87,25 +99,35 @@ body .problems {
     body .problems {
             padding-top: 80px;
         }
-    .problems__title {
-        margin-bottom: 80px;
-    }
-
-  
 
     .problems {
         background-image: url(../images/campfire.svg),
         linear-gradient(to bottom,
 var(--color-black) 0 75%,
 var(--color-white)75% 100%);
-        background-size: 350px, auto;
+        background-size: auto, auto;
         background-repeat: no-repeat, no-repeat;
-        background-position: calc(650px + 50%) bottom, center;
-     
+        background-position: calc(620px + 50%) 20%, center;
+     }
+    .problems__title {
+        margin-bottom: 80px;
+    }
+    .problems-list {
+        display: grid;
+        grid-template-columns: 336px 336px 336px;
+        grid-column-gap: 80px;
+        grid-row-gap: 40px;
+align-items: flex-start;
+
+        padding-top: 60px;
+        padding-right: 192px;
+        padding-bottom: 60px;
+        padding-left: 140px;
     }
 
    .problems-list__pre-text{
     @include font(700, 20px, 33px);
+    margin-bottom: 8px
    }
     .problems-list__text {
     @include font(700, 20px, 28px);
