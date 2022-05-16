@@ -1,0 +1,114 @@
+// MOBILE
+
+@media screen and (max-width: 767px) {
+    .consultation-btn-mobile {
+        display: block;
+        @include font (700, 12px, 15px);
+        letter-spacing: 0.08em;
+        padding: 14px 0;
+        width: 100%;
+        text-align: center;
+        transition: color 250ms linear, background-color 250ms linear;
+
+        &:hover,
+        &:focus {
+            color: var(--color-white);
+            background-color: var(--accent-color);
+        }
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(17, 21, 24, 0.9);
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms linear, visibility 250ms linear;
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+.mobile-menu__container {
+    position: relative;
+}
+
+.mobile-menu__close-btn {
+    position: absolute;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.mobile-menu__close-icon {
+    fill: var(--color-white);
+}
+
+.mobile-nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mobile-nav__item-link {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+    transition: color 250ms linear;
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        padding-top: 40px;
+    }
+    
+    .mobile-menu__close-btn {
+        position: absolute;
+        top: 16px;
+        right: 15px;
+    }
+
+    .mobile-nav {
+        margin-top: 80px;
+        margin-left: 184px;
+        margin-bottom: 0;
+    }
+
+    .mobile-nav__item-link {
+        font-size: 26px;
+    }
+
+        .consultation-btn-mobile {
+        display: none;
+    }
+}
+
+
+// DESKTOP
+
+@media screen and (min-width: 1680px) {
+    .mobile-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,155 @@
+// MOBILE & TABLET
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 500ms linear, visibility 500ms linear;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.mobile-modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background: var(--color-black);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+}
+
+@media screen and (max-width: 1679px) {
+    .mobile-modal-window {
+        max-width: 450px;
+    }
+
+}
+
+.mobile-modal-window__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.mobile-menu__close-icon {
+    fill: var(--color-white);
+}
+
+.modal-contacts-form__input {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 28px;
+    @include font(600, 14px, 17px);
+    letter-spacing: 0.08em;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+
+    transition: color 250ms linear,
+        background-color 250ms linear,
+        border 250ms linear;
+
+    &::placeholder:required {
+        color: var(--color-white);
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-color);
+    }
+
+    &:invalid {
+        border: 1px solid #ff0000;
+    }
+
+    &:not(:placeholder-shown):valid {
+        border: 1px solid #32CD32;
+    }
+}
+
+.modal-contacts-form__input-name {
+    margin-bottom: 20px;
+}
+
+.modal-contacts-form__btn {
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 40px;
+
+    @include font(700, 12px, 15px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    background-color: var(--accent-color);
+    color: var(--color-white);
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+
+    transition: color 250ms linear,
+        background-color 250ms linear,
+        border 250ms linear;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: transparent;
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .mobile-modal-window {
+        max-width: 50%;
+        padding: 80px;
+    }
+
+    .modal-contacts-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-contacts-form__input {
+        @include font(600, 20px, 24px);
+        letter-spacing: 0.08em;
+    }
+
+    .modal-contacts-form__input-name {
+        margin-bottom: 32px;
+    }
+
+    .modal-contacts-form__btn {
+        height: 70px;
+        @include font(null, 14px, 17px);
+        letter-spacing: 0.14em;
+        padding: 27px 0;
+        margin-top: 40px;
+    }
+}
