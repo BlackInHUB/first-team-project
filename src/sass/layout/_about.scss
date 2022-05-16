@@ -1,160 +1,154 @@
 .section__title_aboute {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .section__subtitle_aboute {
-    padding-bottom: 8px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--color-light-grey);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-light-grey);
 }
 
 .about-list {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .about-list__item:not(:last-child) {
-    margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 
 .about-list__item {
-    display: flex;
-    align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .about-list__item::before {
-    content: '';
-    min-width: 17px;
-    height: 14px;
+  content: '';
+  min-width: 17px;
+  height: 14px;
 
-    margin-right: 9px;
+  margin-right: 9px;
 
-    background-image: url("../images/icon-done.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
+  background-image: url('../images/icon-done.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 
-    // fill: var(--accent-color);
+  // fill: var(--accent-color);
 }
 
 .overtitle::before {
-    content: '—';
-    display: block;
+  content: '—';
+  display: block;
 
-    font-family: var(--primary-font-family);
-    @include font (700, 20px, 33px);
-    
-    color: var(--accent-color);
-    margin-bottom: 8px;
+  font-family: var(--primary-font-family);
+  @include font(700, 20px, 33px);
+
+  color: var(--accent-color);
+  margin-bottom: 8px;
 }
 
 .about__text {
-    font-family: var(--primary-font-family);
-    @include font (500, 12px, 20px);
+  font-family: var(--primary-font-family);
+  @include font(500, 12px, 20px);
 
-    color: var(--color-light-grey);
+  color: var(--color-light-grey);
 }
 
 .about__text_end {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .aboute__link {
-    font-family: var(--primary-font-family);
-    @include font (500, 12px, 20px);
-    color: var(--accent-color);
+  font-family: var(--primary-font-family);
+  @include font(500, 12px, 20px);
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
-    .aboute__images {
-        margin-bottom: 20px;
-    }
+  .aboute__images {
+    margin-bottom: 20px;
+  }
 
-    .about-list__text {
-        font-family: var(--primary-font-family);
-        @include font (600, 14px, 17px);
-        letter-spacing: 0.06em;
+  .about-list__text {
+    font-family: var(--primary-font-family);
+    @include font(600, 14px, 17px);
+    letter-spacing: 0.06em;
 
-        color: var(--color-black);
-    }
+    color: var(--color-black);
+  }
 }
-
-
 
 @media screen and (min-width: 768px) {
-    .section__title_aboute {
-        margin-bottom: 40px;
-    }
+  .section__title_aboute {
+    margin-bottom: 40px;
+  }
 
-    .aboute__wrapper {
-        display: flex;
-    }
+  .aboute__wrapper {
+    display: flex;
+  }
 
-    .about-text__wrapper {
-        max-width: 402px;
-        margin-left: auto;
-    }
+  .about-text__wrapper {
+    max-width: 402px;
+    margin-left: auto;
+  }
 
-    .about-list__item:not(:last-child) {
-        margin-bottom: 34px;
-    }
+  .about-list__item:not(:last-child) {
+    margin-bottom: 34px;
+  }
 
-    .about-list__text {
-        @include font (600, 12px, 15px);
-    }
+  .about-list__text {
+    @include font(600, 12px, 15px);
+  }
 
-    .overtitle::before {
-        margin-bottom: 4px;
-    }
+  .overtitle::before {
+    margin-bottom: 4px;
+  }
 
-    .about__text_end {
-        margin-bottom: 24px;
-    }
+  .about__text_end {
+    margin-bottom: 24px;
+  }
 
-    .about__text {
-        @include font (500, 10px, 20px);
-    }
+  .about__text {
+    @include font(500, 10px, 20px);
+  }
 }
-
-
 
 @media screen and (min-width: 1680px) {
-    .section__title_aboute {
-        margin-bottom: 80px;
-    }
+  .section__title_aboute {
+    margin-bottom: 80px;
+  }
 
-    .section__subtitle_aboute {
-        padding-bottom: 16px;
-        margin-bottom: 32px;
-    }
+  .section__subtitle_aboute {
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
 
-    .about-text__wrapper {
-        max-width: 668px;
-        margin-left: 172px;
-    }
+  .about-text__wrapper {
+    max-width: 668px;
+    margin-left: 172px;
+  }
 
-    .about-list__text {
-        @include font (600, 16px, 20px);
-    }
+  .about-list__text {
+    @include font(600, 16px, 20px);
+  }
 
-    .about__text {
-        margin-bottom: 24px;
-        @include font (500, 18px, 28px);
-    }
+  .about__text {
+    margin-bottom: 24px;
+    @include font(500, 18px, 28px);
+  }
 
-    .about__text_end {
-        margin-bottom: 52px;
-    }
+  .about__text_end {
+    margin-bottom: 52px;
+  }
 
-    .aboute__link {
-        @include font (500, 18px, 28px);
-    }
+  .aboute__link {
+    @include font(500, 18px, 28px);
+  }
 
-    .about-list__item::before {
-        min-width: 24.4px;
-        height: 20px;
-    
-        margin-right: 35px;
+  .about-list__item::before {
+    min-width: 24.4px;
+    height: 20px;
+
+    margin-right: 35px;
+  }
 }
-}
-
-

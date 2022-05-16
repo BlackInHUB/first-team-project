@@ -50,6 +50,7 @@
 
   .advantages-list__item {
     grid-template-columns: 75px 1fr;
+    justify-items: center;
   }
 
   .advantages-list__text {
@@ -97,6 +98,7 @@
   .advantages-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 80px;
   }
 
   .advantages-list__item {
