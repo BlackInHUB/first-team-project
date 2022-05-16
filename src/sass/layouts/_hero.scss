@@ -56,7 +56,7 @@
   .hero-gradient {
     max-height: 582px;
     background-image: url('../images/mobile-vector.png');
-    background-position-y: -300px;
+    background-position: bottom;
   }
 
   @media (min-device-pixel-ratio: 0), (min-resolution: 192dpi), (min-resolution: 2dppx) {
