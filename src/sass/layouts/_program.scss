@@ -54,10 +54,7 @@
     position: relative;
     padding-left: 26px;
     margin-bottom: 40px;
-    @include font (700, 14px, 28px);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-white);
+   
 
     &:last-child {
         margin-bottom: 0;
@@ -76,9 +73,20 @@
     }
 }
 
+.semester__title {
+     @include font (700, 14px, 28px);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
 .direction__item {
     margin-top: 4px;
+}
+
+.direction__title {
     @include font (700, 12px, 20px);
+    letter-spacing: 0.08em;
     text-transform: initial;
     color: var(--accent-color);
 }
@@ -87,8 +95,9 @@
     margin-top: 4px;
 }
 
-.subject__item {
+.subject__text {
     @include font (500, 12px, 20px);
+    letter-spacing: 0.08em;
     color: var(--color-light-grey);
     opacity: 0.5;
 }
@@ -116,7 +125,7 @@
             height: 268px;
             background-image: url(../images/program-pic-tablet.png);
             left: 390px;
-            bottom: -110px;
+            bottom: -118px;
         }
     }
 
@@ -184,7 +193,7 @@
             height: 510px;
             background-image: url(../images/program-pic-desktop.png);
             left: -165px;
-            bottom: -335px;
+            bottom: -356px;
         }
     }
 
@@ -201,7 +210,7 @@
         margin-bottom: 0;
         margin-right: 40px;
         flex-basis: calc((100% - 160px) / 5);
-        @include font (700, 30px, 28px);
+       
 
         &:last-child {
             margin-right: 0;
@@ -215,8 +224,15 @@
         }
     }
 
+    .semester__title {
+        @include font (700, 30px, 28px);
+    }
+
     .direction__item {
         margin-top: 24px;
+    }
+
+    .direction__title {
         @include font (700, 20px, 33px);
     }
 
@@ -224,7 +240,7 @@
         margin-top: 8px;
     }
 
-    .subject__item{
+    .subject__text {
         @include font (500, 18px, 28px);
     }
 }
