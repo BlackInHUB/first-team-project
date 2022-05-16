@@ -6,17 +6,16 @@
     background-image: linear-gradient(to bottom,
             var(--color-black) 0 75%,
             var(--color-white)75% 100%);
-}
-body .problems {
-    padding-top: 24px;
-    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
 }
 
 .problems__title {
+    padding-top: 24px;
     margin-bottom: 24px;
 }
 
-.problems__help {
+.problems__title_accent {
     color: var(--accent-color);
 }
 
@@ -27,10 +26,7 @@ body .problems {
 }
 
 .problems-list {
-    padding-top: 20px;
-    padding-right: 12px;
-    padding-bottom: 24px;
-    padding-left: 32px;
+    padding: 24px 32px;
     @include font(700, 14px, 24px);
   
     counter-reset: number 0;
@@ -61,30 +57,26 @@ body .problems {
 .problems-list__text {
  @include font(700, 14px, 20px);
 }
-// @media screen and (max-width: 767px) {
-
-// }
+    // TABLET
 
 @media screen and (min-width: 768px) {
-body .problems {
-        padding-top: 40px;
-    }
+
     .problems__title {
+        padding-top: 40px;
         margin-bottom: 25px;
     }
 
     .problems-list {
         display: grid;
-        grid-template-columns: 225px 225px;
-        grid-column-gap: 40px;
+        // grid-template-columns: 225px 225px;
+        // grid-column-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 90px; 
         grid-row-gap: 8px;
     align-items: flex-start;
        
 
-        padding-top: 32px;
-        padding-right: 98px;
-        padding-bottom: 32px;
-        padding-left: 97px;
+        padding: 32px 100px;
     }
   .problems-list__pre-text {
       margin-bottom: 4px;
@@ -94,12 +86,8 @@ body .problems {
         }
   
 }
-
+    // DESKTOP
 @media screen and (min-width: 1680px) {
-    body .problems {
-            padding-top: 80px;
-        }
-
     .problems {
         background-image: url(../images/campfire.svg),
         linear-gradient(to bottom,
@@ -107,22 +95,22 @@ var(--color-black) 0 75%,
 var(--color-white)75% 100%);
         background-size: auto, auto;
         background-repeat: no-repeat, no-repeat;
-        background-position: calc(620px + 50%) 20%, center;
+        background-position: calc(620px + 50%) 25%, center;
      }
     .problems__title {
+        padding-top: 80px;
         margin-bottom: 80px;
     }
     .problems-list {
         display: grid;
-        grid-template-columns: 336px 336px 336px;
-        grid-column-gap: 80px;
+        // grid-template-columns: 336px 336px 336px;
+        // grid-column-gap: 80px;
+        grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 180px;
         grid-row-gap: 40px;
-align-items: flex-start;
+    align-items: flex-start;
 
-        padding-top: 60px;
-        padding-right: 192px;
-        padding-bottom: 60px;
-        padding-left: 140px;
+        padding: 60px 140px;
     }
 
    .problems-list__pre-text{
