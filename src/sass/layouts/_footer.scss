@@ -1,0 +1,149 @@
+.footer__section{
+    background-color: var(--color-white);
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.footer{
+    background-color: var(--color-white);
+}
+
+.footer-container{
+    margin-bottom: 40px;
+}
+
+.footer-logo{
+    display: inline-flex;
+}
+
+.footer-logo__icon{
+    margin-bottom: 20px;
+}
+
+.footer-list__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-list__item-icon{
+    width: 20px;
+    height: 19px;
+    margin-right: 8px;
+
+    fill: var(--accent-color);
+}
+
+.footer-list__link {
+    display: inline-flex;
+    align-items: center;
+    @include font(600, 14px, 17px);
+    letter-spacing: 0.08em;
+    color: var(--color-black);
+}
+
+.footer-list__link-inst::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/footer-instagram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // display: flex;
+    // justify-content: center;
+}
+
+.footer-wrap__link {
+    @include font(500, 14px, 28px);
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.footer-wrap{
+    padding: 26px 0;
+    background-color: var(--color-black);
+}
+
+@media screen and (max-width: 767px){
+    .footer-logo__icon {
+        display: block;
+    }
+
+    .footer-logo__icon-tablet{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo__icon {
+        display: none;
+    }
+
+    .footer-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-list__item{
+        display: flex;
+    }
+
+    .footer-list__item:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .footer-list__item-icon {
+        width: 24px;
+        height: 23px;
+    }
+
+    .footer-list__link {
+        @include font(null, 20px, 24px);
+    }
+
+    .footer-list__link-border{
+        padding-right: 24px;
+        border-right: 1px solid #B9B9B9;
+    }
+
+    .footer-list__link-inst::after{
+        margin-left: 24px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .footer-container{
+        margin-bottom: 80px;
+    }
+
+    .footer-logo{
+        position: absolute;
+    }
+
+    .footer-list{
+        margin: 0 auto;
+    }
+
+    .footer-list__item-icon{
+        width: 30px;
+        height: 29px;
+        margin-right: 16px;
+    }
+
+    .footer-list__link-border {
+        padding-right: 21px;
+    }
+
+    .footer-list__link{
+        @include font(null, 30px, 37px);
+        display: flex;
+    }
+
+    .footer-wrap {
+        padding: 26px 0;
+    }
+}
