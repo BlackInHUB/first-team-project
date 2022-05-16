@@ -2,7 +2,7 @@
 .benefits {
     padding-top: 0;
     padding-bottom: 0;
-    background-image: linear-gradient(to bottom, var(--color-black) 63%, var(--color-white) 37%);
+    background-image: linear-gradient(to bottom, var(--color-black) 59%, var(--color-white) 41%);
 }
 
 .benefits__section-title {
@@ -11,7 +11,7 @@
     margin-bottom: 32px;
 }
 
-.indent {
+.benefits__section-title_indent {
     display: block;
 }
 
@@ -19,23 +19,18 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    padding-right: 24px;
+    padding-right: 30px;
     background: var(--color-white);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
     counter-reset: benefits-counter;
 }
 
-.benefits-list__item {
+.benefits-list__item:not(:last-child) {
     margin-bottom: 40px;
     @include font (700, 14px, 20px);
     letter-spacing: 0.08em;
     color: var(--color-black);
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
 
     &::before {
         display: block;
