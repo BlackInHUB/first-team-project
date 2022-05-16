@@ -1,8 +1,5 @@
 .section__contacts {
-    max-width: 100%;
     background-color: var(--color-black);
-
-    border: 1px solid #000000;
 
     background-image: url("/images/contacts-mobille.png");
     background-repeat: no-repeat;
@@ -28,7 +25,7 @@
     color: #fff;
 }
 
-.contacts-title__color-orange{
+.contacts-title__color_orange{
     color: var(--accent-color)
 }
 
@@ -40,7 +37,7 @@
     color: var(--color-white);
 }
 
-.contacts-text__color-orange {
+.contacts-text__color_orange {
     color: var(--accent-color);
 }
 
@@ -77,7 +74,7 @@
     }
 
     &:invalid{
-        border: solid #ff0000;
+        border: 1px solid #ff0000;
     }
 }
 
