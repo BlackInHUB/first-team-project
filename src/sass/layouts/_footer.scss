@@ -11,12 +11,8 @@
     display: inline-flex;
 }
 
-.footer-contacts__icon{
+.footer-logo__icon{
     margin-bottom: 20px;
-}
-
-.footer-contacts__icon{
-    display: none;
 }
 
 .footer-list__item:not(:last-child) {
@@ -33,22 +29,26 @@
 
 .footer-list__link {
     display: inline-flex;
+    align-items: center;
     @include font(600, 14px, 17px);
     letter-spacing: 0.08em;
     color: var(--color-black);
+}
+
+.footer-list__link-inst{
+    padding-bottom: 40px;
 }
 
 .footer-list__link-inst::after{
     content: "";
     width: 40px;
     height: 40px;
-    margin-bottom: 40px;
     background-image: url(/images/footer-instagram.svg);
     background-repeat: no-repeat;
     background-size: contain;
 
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 }
 
 .footer-wrap__link {
@@ -58,30 +58,29 @@
 }
 
 .footer-wrap{
-    padding: 24px 0;
+    padding: 26px 0;
     background-color: var(--color-black);
 }
 
 @media screen and (max-width: 767px){
-    .footer-contacts__icon {
+    .footer-logo__icon {
         display: block;
     }
 
-    .footer-contacts__icon-tablet{
+    .footer-logo__icon-tablet{
         display: none;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .container{
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
     .footer-container{
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
+    }
+
+    .footer-logo__icon {
+        display: none;
     }
 
     .footer-list{
@@ -106,23 +105,21 @@
         @include font(null, 20px, 24px);
     }
 
-    .footer-contacts__link-border{
+    .footer-list__link-border{
         padding-right: 24px;
         border-right: 1px solid #B9B9B9;
     }
 
+    .footer-list__link-inst{
+        padding-bottom: 0;
+    }
+
     .footer-list__link-inst::after{
-        margin-bottom: 0;
         margin-left: 24px;
     }
 }
 
 @media screen and (min-width: 1680px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     .footer-container{
         margin-bottom: 80px;
     }
@@ -141,7 +138,7 @@
         margin-right: 16px;
     }
 
-    .footer-contacts__link-border {
+    .footer-list__link-border {
         padding-right: 21px;
     }
 
