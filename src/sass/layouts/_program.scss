@@ -1,6 +1,11 @@
+// PROGRAM
 .program {
-    padding-bottom: 145px;
     background: var(--color-black);
+}
+
+.program__container {
+    overflow: hidden;
+    padding-bottom: 105px;
 }
 
 .section-title_color {
@@ -92,7 +97,11 @@
 @media screen and (min-width: 768px) and (max-width: 1679px) {
     .program {
         padding-top: 60px;
-        padding-bottom: 180px;
+        padding-bottom: 80px;
+    }
+
+    .program__container {
+        padding-bottom: 110px;
     }
 
     .section-title_color {
@@ -141,9 +150,13 @@
 @media screen and (min-width: 1680px) {
     .program {
         position: relative;
-        padding-bottom: 436px;
+        padding-bottom: 70px;
     }
 
+    .program__container {
+        padding-bottom: 334px;
+    }
+    
     .program::before {
         content: '';
         position: absolute;
