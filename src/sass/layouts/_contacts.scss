@@ -63,7 +63,7 @@
             background-color 250ms linear,
             border 250ms linear;
 
-    &::placeholder{
+    &::placeholder:required{
         color: var(--color-white);
     }
 
@@ -75,6 +75,10 @@
 
     &:invalid{
         border: 1px solid #ff0000;
+    }
+
+    &:not(:placeholder-shown):valid {
+        border: 1px solid #32CD32;
     }
 }
 
