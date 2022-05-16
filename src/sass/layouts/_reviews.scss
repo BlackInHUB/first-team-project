@@ -1,8 +1,19 @@
 .reviews-container {
     text-align: center;
-    position: relative;
+    padding-bottom: 40px;
+    @media screen and (min-width: 320px) {
+        max-width: 320px;
+        padding: 0 20px;
+    }
     @media screen and (min-width: 768px) {
+        max-width: 768px;
         text-align: left;
+        position: relative;
+        padding: 0 32px;
+    }
+    @media screen and (min-width: 1680px) {
+        max-width: 1213px;
+        padding: 0 63px 0 62px;
     }
 }
 
@@ -10,13 +21,21 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
-        padding: 40px 49px;
+        padding: 40px 48px 40px 50px;
+    }
+    @media screen and (min-width: 1680px) {
+        padding: 60px 111px 60px 81px;
     }
 }
 
 .feedback-foto {
     @media screen and (min-width: 768px) {
+        min-width: 150px;
         margin-right: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
     }
 }
 
@@ -26,11 +45,28 @@
     color: var(--color-black);
     margin-bottom: 24px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+        @include font (800, 26px, 34px);
+    }
+    @media screen and (min-width: 1680px) {
+        @include font (800, 46px, 60px);
+    }
 }
 
 .feedback-img {
     margin: 0 auto;
     margin-bottom: 24px;
+    @media screen and (min-width: 1680px) {
+        margin-bottom: 8px;
+    }
+}
+
+.feedback-review {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        
+    }
 }
 
 .feedback__text {
@@ -48,6 +84,12 @@
     margin-top: 24px;
     @media screen and (min-width: 768px) {
         margin-top: 0;
+        @include font (800, 20px, 24px);
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1680px) {
+        @include font (800, 30px, 37px);
+        margin-bottom: 8px;
     }
 }
 
@@ -56,24 +98,40 @@
     letter-spacing: 0.08em;
     color: var(--color-light-grey);
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1680px) {
+        @include font (500, 14px, 17px);
+        width: 482px;
+    }
 }
 
 .feedback__text--review {
     @include font (500, 12px, 20px);
     color: var(--color-dark-grey);
+    @media screen and (min-width: 1680px) {
+        @include font (500, 18px, 28px);
+    }
 }
 
 .feedback-link {
     @include font (500, 12px, 20px);
     color: var(--accent-color);
+    @media screen and (min-width: 1680px) {
+        @include font (500, 18px, 28px);
+    }
 }
 
 .feedback-pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
+    @media screen and (min-width: 1680px) {
+        margin-top: 40px;
+    }
 }
 
 .feedback-pagination__list {
@@ -87,11 +145,32 @@
     &:nth-child(-n + 2) {
         margin-right: 15px;
     }
-    // &:not(:last-child) {
-    //     margin-right: 12px;
-    // }
-    &:nth-child(n + 4) {
-        display: none;
+    @media screen and (min-width: 768px) { 
+        &:not(:last-child) {
+        margin-right: 32px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &:nth-child(n + 4) {
+            display: none;
+        }
+    }
+}
+
+.feedback-arrow--right {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    display: flex;
+    align-content: center;
+    @media screen and (min-width: 768px) { 
+        position: absolute;
+        right: 36px;
+        top: 50%;
+    }
+    @media screen and (min-width: 1680px) { 
+        right: 0px;
+        top: 50%;
     }
 }
 
@@ -100,12 +179,15 @@
     padding: 0;
     background-color: inherit;
     display: flex;
-}
-
-.feedback-arrow--right {
-    border: none;
-    padding: 0;
-    background-color: inherit;
-    display: flex;
+    align-content: center;
+    @media screen and (min-width: 768px) { 
+        position: absolute;
+        left: 36px;
+        top: 50%;
+    }
+    @media screen and (min-width: 1680px) { 
+        left: 0;
+        top: 50%;
+    }
 }
 
