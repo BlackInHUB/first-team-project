@@ -9,6 +9,8 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     transition: opacity var(--transition-duration) cubic-bezier(0.075, 0.82, 0.165, 1), visibility var(--transition-duration) cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    z-index: 4;
 }
 
 .certificate-wrap {
