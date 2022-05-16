@@ -26,12 +26,7 @@
     counter-reset: benefits-counter;
 }
 
-.benefits-list__item {
-    @include font (700, 14px, 20px);
-    letter-spacing: 0.08em;
-    color: var(--color-black);
-
-    &::before {
+.benefits-list__item::before {
         display: block;
         margin-bottom: 8px;
         @include font (700, 14px, 23px);
@@ -40,12 +35,17 @@
         content: "— 0" counter(benefits-counter);
         color: var(--accent-color);
     }
-}
 
 @media screen and (max-width: 767px) {
     .benefits-list__item:not(:last-child) {
         margin-bottom: 40px;
     }
+}
+
+.benefits-list__text {
+    @include font (700, 14px, 20px);
+    letter-spacing: 0.08em;
+    color: var(--color-black);
 }
 
 
@@ -101,11 +101,11 @@
         grid-row-gap: 40px;
     }
 
-    .benefits-list__item {
-        @include font (700, 20px, 28px);
-
-        &::before {
+    .benefits-list__item::before {
             @include font (700, 20px, 33px);
         }
+
+    .benefits-list__text {
+        @include font (700, 20px, 28px);
     }
 }
