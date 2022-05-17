@@ -1,4 +1,4 @@
-.section__title_aboute {
+.section__section-title {
     margin-bottom: 20px;
 }
 
@@ -89,15 +89,15 @@
 
 
 @media screen and (min-width: 768px) {
-    .section__title_aboute {
+    .section__section-title {
         margin-bottom: 40px;
     }
 
-    .aboute__wrapper {
+    .aboute {
         display: flex;
     }
 
-    .about-text__wrapper {
+    .about__text-wrapper {
         max-width: 402px;
         margin-left: auto;
     }
@@ -126,7 +126,7 @@
 
 
 @media screen and (min-width: 1680px) {
-    .section__title_aboute {
+    .section__section-title {
         margin-bottom: 80px;
     }
 
@@ -135,7 +135,7 @@
         margin-bottom: 32px;
     }
 
-    .about-text__wrapper {
+    .about__text-wrapper {
         max-width: 668px;
         margin-left: 172px;
     }
