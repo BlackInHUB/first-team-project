@@ -58,10 +58,18 @@
     margin-bottom: 8px;
 }
 
-.aboute__link {
+.aboute__button {
+    padding: 0;
+    border: none;
+
     font-family: var(--primary-font-family);
     @include font (500, 12px, 20px);
+
+    text-align: left;
     color: var(--accent-color);
+    background-color: transparent;
+
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -145,7 +153,8 @@
         margin-bottom: 52px;
     }
 
-    .aboute__link {
+    .aboute__button {
+        margin-top: auto;
         @include font (500, 18px, 28px);
     }
 
