@@ -5,6 +5,10 @@
         display: block;
         @include font (700, 12px, 15px);
         letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent-color);
+        background-color: transparent;
+        border: 2px solid var(--accent-color);
         padding: 14px 0;
         width: 100%;
         text-align: center;
