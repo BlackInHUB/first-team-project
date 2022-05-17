@@ -50,7 +50,7 @@
     color: var(--color-dark-grey);
 }
 
-.guarantee-list__item_accent {
+.guarantee-list__item-accent {
     @include font (500, 12px, 20px);
     color: var(--accent-color);
 }
@@ -93,7 +93,7 @@
         @include font (500, 20px, 28px);
     }
 
-    .guarantee-list__item_accent {
+    .guarantee-list__item-accent {
         @include font (500, 20px, 28px);
     }
 
