@@ -158,12 +158,7 @@
 
 // 1680px +
 @media screen and (min-width: 1680px) {
-    .program {
-        padding-bottom: 216px;
-        background-image: linear-gradient(to bottom, var(--color-black) 0 86%, var(--color-white) 86% 100%);
-    }
-
-    .program__container {
+       .program__container {
         padding-bottom: 334px;
     }
     

@@ -87,10 +87,8 @@
 // 1680px +
 @media screen and (min-width: 1680px) {
     .benefits {
-        position: absolute;
-        top: 4110px;
-        left: 73px;
-        
+        margin-top: -200px;
+        position: relative;
     }
     
     .benefits__section-title {
