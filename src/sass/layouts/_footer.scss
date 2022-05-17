@@ -1,4 +1,4 @@
-.footer__section{
+.footer-section{
     background-color: var(--color-white);
     text-align: center;
     padding-bottom: 0;
@@ -38,6 +38,13 @@
     @include font(600, 14px, 17px);
     letter-spacing: 0.08em;
     color: var(--color-black);
+
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color)
+    }
 }
 
 .footer-list__link-inst::after{
@@ -47,9 +54,6 @@
     background-image: url(/images/footer-instagram.svg);
     background-repeat: no-repeat;
     background-size: contain;
-
-    // display: flex;
-    // justify-content: center;
 }
 
 .footer-wrap__link {
