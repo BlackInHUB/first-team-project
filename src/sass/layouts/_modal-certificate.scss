@@ -11,11 +11,17 @@
     transition: opacity 500ms cubic-bezier(0.075, 0.82, 0.165, 1), visibility 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.certificate-wrap {
-    max-width: 600px;
+.certificate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: calc(100% - 30px);
+    padding: 20px;
 
     border-radius: 5px;
-    background-color: #fdfde5;
+    background-color: var(--color-certificate);
 }
 
 .cross {
@@ -30,18 +36,39 @@
     height: 30px;
     padding: 0;
 
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-certificate);
+    border: 1px solid var(--accent-color);
     border-radius: 50%;
 
     cursor: pointer;
+
+    transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+        background-color: var(--accent-color);
+    }
 }
 
 .cross__icon {
-    fill: var(--color-text);
-    transition: fill var(--transition-duration) var(--transition-timing-function);
+    fill: var(--accent-color);
+    transition: fill 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
     .cross:hover & {
-        fill: var(--color-brand);
+        fill: var(--color-white);
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .certificate {
+        min-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .certificate {
+        max-width: 1000px;
     }
 }

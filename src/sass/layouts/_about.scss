@@ -1,5 +1,5 @@
-.section__title_aboute {
-  margin-bottom: 20px;
+.section__section-title {
+    margin-bottom: 20px;
 }
 
 .section__subtitle_aboute {
@@ -58,10 +58,18 @@
   margin-bottom: 8px;
 }
 
-.aboute__link {
-  font-family: var(--primary-font-family);
-  @include font(500, 12px, 20px);
-  color: var(--accent-color);
+.aboute__button {
+    padding: 0;
+    border: none;
+
+    font-family: var(--primary-font-family);
+    @include font (500, 12px, 20px);
+
+    text-align: left;
+    color: var(--accent-color);
+    background-color: transparent;
+
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -79,18 +87,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section__title_aboute {
-    margin-bottom: 40px;
-  }
+    .section__section-title {
+        margin-bottom: 40px;
+    }
 
-  .aboute__wrapper {
-    display: flex;
-  }
+    .aboute {
+        display: flex;
+    }
 
-  .about-text__wrapper {
-    max-width: 402px;
-    margin-left: auto;
-  }
+    .about__text-wrapper {
+        max-width: 402px;
+        margin-left: auto;
+    }
 
   .about-list__item:not(:last-child) {
     margin-bottom: 34px;
@@ -114,19 +122,19 @@
 }
 
 @media screen and (min-width: 1680px) {
-  .section__title_aboute {
-    margin-bottom: 80px;
-  }
+    .section__section-title {
+        margin-bottom: 80px;
+    }
 
   .section__subtitle_aboute {
     padding-bottom: 16px;
     margin-bottom: 32px;
   }
 
-  .about-text__wrapper {
-    max-width: 668px;
-    margin-left: 172px;
-  }
+    .about__text-wrapper {
+        max-width: 668px;
+        margin-left: 172px;
+    }
 
   .about-list__text {
     @include font(600, 16px, 20px);
@@ -141,9 +149,10 @@
     margin-bottom: 52px;
   }
 
-  .aboute__link {
-    @include font(500, 18px, 28px);
-  }
+    .aboute__button {
+        margin-top: auto;
+        @include font (500, 18px, 28px);
+    }
 
   .about-list__item::before {
     min-width: 24.4px;

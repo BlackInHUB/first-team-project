@@ -2,9 +2,9 @@
 
 <section class="section" id="about">
   <div class="container">
-    <h2 class="section-title section__title_aboute">Teacher</h2>
+    <h2 class="section-title section__section-title">Teacher</h2>
 
-    <div class="aboute__wrapper">
+    <div class="aboute">
       <picture>
         <source
           srcset="../src/images/about-528.webp 1x, ../src/images/about-528@2x.webp 2x"
@@ -31,7 +31,7 @@
         />
       </picture>
 
-      <div class="about-text__wrapper">
+      <div class="about__text-wrapper">
         <h3 class="section__subtitle section__subtitle_aboute">Elena Moreva</h3>
 
         <ul class="about-list list">
@@ -64,26 +64,42 @@
           (University of Houston)
         </p>
 
-        <a class="aboute__link" href="" data-modal-open>Cambrige English Entry Level Certificate</a>
+        <button type="button" class="aboute__button" data-modal-open>
+          <u>Cambrige English Entry Level Certificate</u>
+        </button>
       </div>
     </div>
   </div>
 </section>
 
 <!-- MODAL Certificate -->
+
 <div class="modal-certificate is-hidden" data-modal>
-  <div class="certificate-wrap">
+  <div class="certificate">
     <button type="button" class="cross" data-modal-close>
       <svg width="18" height="18" class="cross__icon">
-        <use href="../src/images/icon-cross.svg"></use>
+        <use href="./images/sprite.svg#cross"></use>
       </svg>
     </button>
 
-  <picture>
-    <source srcset="../src/images/certificate-500.jpg 1x, ../src/images/certificate-500@2x.jpg 2x"/>
-    <source srcset="../src/images/certificate-500.webp 1x, ../src/images/certificate-500@2x.webp 2x" type="image/webp" />
-    <img class="" src="../src/images/certificate-500.jpg" alt="Certificate of English teacher Elena Moreva" />
-  </picture>
-
+    <picture>
+      <source
+        srcset="../src/images/certificate-1000.webp"
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source srcset="../src/images/certificate-1000.jpg" media="(min-width: 768px)" />
+      <source
+        srcset="../src/images/certificate-500.webp"
+        type="image/webp"
+        media="(max-width: 767px)"
+      />
+      <source srcset="../src/images/certificate-500.jpg" media="(max-width: 767px)" />
+      <img
+        class="certificate__images"
+        src="../src/images/certificate-500.jpg"
+        alt="Certificate of English teacher Elena Moreva"
+      />
+    </picture>
   </div>
 </div>
