@@ -29,6 +29,7 @@
     border: 2px solid var(--accent-color);
     margin-right: 40px;
     transition: color 250ms linear, background-color 250ms linear;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -49,7 +50,7 @@
         display: none;
     }
 
-    .logo__icon_tablet {
+    .logo__icon-tablet {
         display: none;
     }
 }
@@ -76,11 +77,11 @@
         padding-top: 40px;
     }
 
-    .logo__icon_mobile {
+    .logo__icon-mobile {
         display: none;
     }
 
-    .logo__icon_tablet {
+    .logo__icon-tablet {
         display: block;
     }
 }

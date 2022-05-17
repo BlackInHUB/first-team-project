@@ -84,12 +84,12 @@
         border: 1px solid var(--accent-color);
     }
 
-    &:invalid {
-        border: 1px solid #ff0000;
+    &:not(:placeholder-shown):required:valid {
+        border: 1px solid #32CD32;
     }
 
-    &:not(:placeholder-shown):valid {
-        border: 1px solid #32CD32;
+    &:not(:placeholder-shown):required:invalid {
+        border: 1px solid #ff0000;
     }
 }
 
