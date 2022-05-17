@@ -105,6 +105,7 @@
 //from 768px to 1679px
 @media screen and (min-width: 768px) and (max-width: 1679px) {
     .program {
+        position: relative;
         padding-top: 60px;
         padding-bottom: 80px;
     }
@@ -158,8 +159,8 @@
 // 1680px +
 @media screen and (min-width: 1680px) {
     .program {
-        position: relative;
-        padding-bottom: 70px;
+        padding-bottom: 216px;
+        background-image: linear-gradient(to bottom, var(--color-black) 0 86%, var(--color-white) 86% 100%);
     }
 
     .program__container {
