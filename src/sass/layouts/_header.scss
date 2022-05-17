@@ -2,8 +2,8 @@
     display: flex;
 }
 
-.nav-list__item {
-    margin-right: 40px;
+.nav-list__item:not(:last-child) {
+    margin-right: 70px;
 }
 
 .nav-list__item-link {
@@ -100,6 +100,7 @@
 
     .consultation-btn {
         padding: 25px 47px;
+        margin-left: 40px;
         margin-right: 0;
     }
 }
