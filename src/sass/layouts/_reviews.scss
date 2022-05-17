@@ -1,19 +1,22 @@
 .reviews-container {
+    position: relative;
     @media screen and (min-width: 1680px) {
         width: 1203px;
+        padding: 0 57px 0 58px;
     }
 }
 
 .reviews__article {
     padding: 0 25px;
     @media screen and (min-width: 768px) {
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         display: flex;
-        padding: 40px 65px 40px 67px;
+        width: 704px;
+        padding: 40px 48px 40px 50px;
+        margin: 0 auto;
     }
     @media screen and (min-width: 1680px) {
-        width: 1088px;
         padding: 60px 111px 60px 81px;
-        margin: 0 auto;
     }
 }
 
@@ -45,7 +48,7 @@
         margin-right: 44px;
         justify-content: flex-start;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1680px) {
         margin-right: 40px;
     }
 }
@@ -54,6 +57,12 @@
     margin-bottom: 24px;
     @media screen and (min-width: 1680px) {
         margin-bottom: 8px;
+    }
+}
+
+.reviews__article-feedback {
+    @media screen and (min-width: 768px) {
+        padding-right: 4px;
     }
 }
 
@@ -124,8 +133,6 @@
 .reviews__slider-list {
     display: flex;
     justify-content: center;
-    margin: 0 22px;
-    justify-content: baseline;
 }
 
 .reviews__slider-list__item {
@@ -150,6 +157,8 @@
 }
 
 .reviews__slider-btn {
+    width: 25px;
+    height: 25px;
     border: none;
     padding: 0;
     background-color: inherit;
@@ -157,27 +166,33 @@
     align-content: center;
 }
 
+
 .right-btn {
-    // @media screen and (min-width: 768px) { 
-    //     position: absolute;
-    //     right: 36px;
-    //     top: 50%;
-    // }
-    // @media screen and (min-width: 1680px) { 
-    //     right: 0px;
-    //     top: 50%;
-    // }
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    @media screen and (min-width: 768px) { 
+        right: 36px;
+        top: 50%;
+    }
+    @media screen and (min-width: 1680px) { 
+        right: 0;
+    }
 }
 
 .left-btn {
-    // @media screen and (min-width: 768px) { 
-    //     position: absolute;
-    //     left: 36px;
-    //     top: 50%;
-    // }
-    // @media screen and (min-width: 1680px) { 
-    //     left: 0;
-    //     top: 50%;
-    // }
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    @media screen and (min-width: 768px) { 
+        left: 36px;
+        top: 50%;
+    }
+    @media screen and (min-width: 1680px) { 
+        left: 0;
+    }
 }
 
+.activ:hover {
+    border: 1px solid var(--accent-color);
+}
