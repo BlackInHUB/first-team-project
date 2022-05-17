@@ -1,0 +1,111 @@
+// BENEFITS
+.benefits {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, var(--color-black) 59%, var(--color-white) 41%);
+}
+
+.benefits__section-title {
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+    margin-bottom: 32px;
+}
+
+.benefits__section-title_indent {
+    display: block;
+}
+
+.benefits-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    background: var(--color-white);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    counter-reset: benefits-counter;
+}
+
+.benefits-list__item::before {
+        display: block;
+        margin-bottom: 8px;
+        @include font (700, 14px, 23px);
+        letter-spacing: 0.08em;
+        counter-increment: benefits-counter;
+        content: "— 0" counter(benefits-counter);
+        color: var(--accent-color);
+    }
+
+@media screen and (max-width: 767px) {
+    .benefits-list__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.benefits-list__text {
+    @include font (700, 14px, 20px);
+    letter-spacing: 0.08em;
+    color: var(--color-black);
+}
+
+
+// 768px +
+@media screen and (min-width: 768px) {
+    .benefits {
+        background-image: linear-gradient(to bottom, var(--color-black) 0 40%, var(--color-white) 40% 60%);
+    }
+
+    .benefits__section-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .indent {
+        display: inline;
+    }
+
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+    .benefits__wrapper {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+    .benefits-list {
+        padding: 40px 92px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 44px;
+    }
+}
+
+// 1680px +
+@media screen and (min-width: 1680px) {
+    // .benefits {
+    //     position: absolute;
+    //     top: 3340px;
+    // }
+    
+    .benefits__section-title {
+        display: none;
+    }
+
+    .benefits-list {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 140px;
+        padding-right: 32px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 204px;
+        grid-row-gap: 40px;
+    }
+
+    .benefits-list__item::before {
+            @include font (700, 20px, 33px);
+        }
+
+    .benefits-list__text {
+        @include font (700, 20px, 28px);
+    }
+}
