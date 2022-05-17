@@ -11,10 +11,6 @@
 @import './base/common';
 @import './base/container';
 @import './layouts/section-title';
-@import './layouts/header';
-@import './layouts/benefits';
-@import './layouts/about';
-@import './layouts/modal-certificate';
 
 @import './layouts/header';
 @import './layouts/mobile_menu';
@@ -22,11 +18,11 @@
 @import './layouts/hero';
 @import './layouts/hero-picture';
 @import './layouts/hero-button';
-
+@import './layouts/advantages';
 @import './layouts/problems';
 @import './layouts/how-we-do';
 @import './layouts/program';
-
+@import './layouts/benefits';
 @import './layouts/about';
 @import './layouts/modal-certificate';
 @import './layouts/guarantee';
@@ -34,4 +30,4 @@
 
 @import './layouts/contacts';
 @import './layouts/footer';
-@import './layouts/advantages';
+
