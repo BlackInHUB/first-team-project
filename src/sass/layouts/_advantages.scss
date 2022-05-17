@@ -1,3 +1,8 @@
+.advantages-section {
+  padding-top: 0;
+  margin-top: -40px;
+}
+
 .advantages-list__item {
   @include font(700, 14px, 23px);
   display: grid;
@@ -43,6 +48,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
+  .advantages-section {
+    margin-top: -80px;
+  }
+  
   .advantages-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
