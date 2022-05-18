@@ -158,6 +158,10 @@
 
 // 1680px +
 @media screen and (min-width: 1680px) {
+        .program {
+            position: relative;
+        }
+
        .program__container {
         padding-bottom: 334px;
     }
