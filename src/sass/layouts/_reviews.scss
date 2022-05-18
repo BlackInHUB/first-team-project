@@ -1,0 +1,263 @@
+.reviews {
+    padding-top: 0;
+}
+
+.reviews-container {
+    position: relative;
+}
+
+.swiper {
+    margin-bottom: 40px;
+}
+
+.reviews__article {
+    padding: 0 25px;
+}
+
+.reviews-container__title {
+    @include font (800, 20px, 26px);
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+    text-align: center;
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.reviews__article-foto {
+    margin-bottom: 24px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+// .reviews__article-foto-picture {
+//     margin-bottom: 24px;
+// }
+
+.reviews__article-foto-img {
+    margin: 0 auto;
+}
+
+.reviews__article-foto-link {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.reviews-icon {
+    fill: #436EAB;
+}
+
+.reviews__article-feedback-name {
+    @include font (800, 14px, 17px);
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 16px;
+}
+
+.reviews__article-feedback-university {
+    @include font (500, 12px, 15px);
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--color-light-grey);
+    margin-bottom: 16px;
+}
+
+.reviews__article-feedback-text {
+    @include font (500, 12px, 20px);
+    text-align: center;
+    color: var(--color-dark-grey);
+}
+
+.reviews__article-feedback-link {
+    @include font (500, 12px, 20px);
+    color: var(--accent-color);
+}
+
+// .reviews__slider {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+// }
+
+.reviews__slider-list {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__slider-list__item {
+    border-radius: 50%;
+    &:nth-child(-n + 2) {
+        margin-right: 15px;
+    }
+}
+
+.reviews__slider-list__item__img {
+    border-radius: 50%;
+    border: 1 px solid transparent;
+}
+
+.reviews__slider-btn {
+    width: 25px;
+    height: 25px;
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    display: flex;
+    align-content: center;
+}
+
+.arrow-icon {
+    fill: var(--accent-color);
+}
+
+.right-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.left-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+.activ:hover {
+    border: 1px solid var(--accent-color);
+}
+
+
+@media screen and (max-width: 767px) {
+    .reviews__slider-list__item {
+        &:nth-child(n + 4) {
+            display: none;
+        }
+    }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+    .swiper {
+        margin-bottom: 20px;
+    }
+
+    .reviews__article {
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 82px 40px 80px;
+    }
+
+    .reviews-container__title {
+        width: 100%;
+        margin-bottom: 40px;
+        @include font (800, 26px, 34px);
+    }
+
+    .reviews__article-foto {
+        margin-bottom: 0;
+        min-width: 150px;
+        margin-right: 44px;
+    }
+
+    .reviews__article-foto-link {
+        margin-top: 20px;
+    }
+
+    .reviews__article-feedback {
+        min-width: 412px;
+        // padding-right: 4px;
+    }
+
+    .reviews__article-feedback-name {
+        @include font (800, 20px, 24px);
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .reviews__article-feedback-university {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .reviews__article-feedback-text {
+        text-align: left;
+    }
+
+    .reviews__slider-list__item {
+        &:not(:last-child) {
+            margin-right: 32px;
+    }
+}
+
+    .right-btn {
+        right: 36px;
+        top: 50%;
+    }
+
+    .left-btn {
+        left: 36px;
+        top: 50%;
+    }
+}
+
+
+// 1680+
+@media screen and (min-width: 1680px) {
+    .reviews-container {
+        width: 1203px;
+        padding: 0 57px 0 58px;
+    }
+
+    .swiper {
+        margin-bottom: 40px;
+    }
+
+    .reviews__article {
+        padding: 60px 111px 60px 81px;
+    }
+
+    .reviews__article-foto-link {
+        margin-top: 8px;
+    }
+
+    .reviews-container__title {
+        @include font (800, 46px, 60px);
+    }
+
+    .reviews__article-feedback-name {
+        @include font (800, 30px, 37px);
+        margin-bottom: 8px;
+    }
+
+    .reviews__article-feedback-university {
+        @include font (500, 14px, 17px);
+        width: 482px;
+    }
+
+    .reviews__article-feedback-text {
+        @include font (500, 18px, 28px);
+    }
+
+    .reviews__article-feedback-link {
+        @include font (500, 18px, 28px);
+    }
+
+    .reviews__slider-list__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    .right-btn {
+        right: 0;
+    }
+
+    .left-btn {
+        left: 0;
+    }
+}
