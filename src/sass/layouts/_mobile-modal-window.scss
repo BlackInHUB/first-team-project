@@ -28,7 +28,7 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    padding: 40px 20px;
 }
 
 @media screen and (max-width: 1679px) {
@@ -121,6 +121,13 @@
         background-color: transparent;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-modal-window {
+        padding-right: 40px;
+        padding-left: 40px;
     }
 }
 
