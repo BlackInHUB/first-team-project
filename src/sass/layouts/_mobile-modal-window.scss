@@ -36,6 +36,9 @@
         max-width: 450px;
     }
 
+    .modal-contacts-form__btn {
+        width: 100%;
+    }
 }
 
 .mobile-modal-window__close-btn {
@@ -98,7 +101,6 @@
 }
 
 .modal-contacts-form__btn {
-    width: 100%;
     padding: 14px 0;
     margin-top: 40px;
 
@@ -153,10 +155,9 @@
     }
 
     .modal-contacts-form__btn {
-        height: 70px;
         @include font(null, 14px, 17px);
         letter-spacing: 0.14em;
-        padding: 27px 0;
+        padding: 27px 60px;
         margin-top: 40px;
     }
 }
