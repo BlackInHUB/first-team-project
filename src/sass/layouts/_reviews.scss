@@ -90,6 +90,7 @@
 
 .reviews__slider-list__item {
     border-radius: 50%;
+    border: 1px solid transparent;
     &:nth-child(-n + 2) {
         margin-right: 15px;
     }
