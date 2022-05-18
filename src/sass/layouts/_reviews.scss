@@ -148,8 +148,7 @@
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         display: flex;
         justify-content: space-between;
-        padding: 40px 49px 40px 49px;
-        margin: 0 auto;
+        padding: 40px 82px 40px 80px;
     }
 
     .reviews-container__title {
@@ -162,7 +161,6 @@
         margin-bottom: 0;
         min-width: 150px;
         margin-right: 44px;
-        justify-content: flex-start;
     }
 
     .reviews__article-foto-link {
@@ -170,7 +168,8 @@
     }
 
     .reviews__article-feedback {
-        padding-right: 4px;
+        min-width: 412px;
+        // padding-right: 4px;
     }
 
     .reviews__article-feedback-name {
