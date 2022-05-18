@@ -1,9 +1,5 @@
 .reviews-container {
     position: relative;
-    @media screen and (min-width: 1680px) {
-        width: 1203px;
-        padding: 0 57px 0 58px;
-    }
 }
 
 .swiper {
@@ -12,15 +8,6 @@
 
 .reviews__article {
     padding: 0 25px;
-    @media screen and (min-width: 768px) {
-        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-        display: flex;
-        padding: 40px 67px 40px 69px;
-        margin: 0 auto;
-    }
-    @media screen and (min-width: 1680px) {
-        padding: 60px 111px 60px 81px;
-    }
 }
 
 .reviews-container__title {
@@ -31,50 +18,28 @@
     width: 240px;
     margin: 0 auto;
     margin-bottom: 24px;
-    @media screen and (min-width: 768px) {
-        width: 100%;
-        margin-bottom: 40px;
-        @include font (800, 26px, 34px);
-    }
-    @media screen and (min-width: 1680px) {
-        @include font (800, 46px, 60px);
-    }
 }
 
 .reviews__article-foto {
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
-    @media screen and (min-width: 768px) {
-        min-width: 150px;
-        margin-right: 44px;
-        justify-content: flex-start;
-    }
-    @media screen and (min-width: 1680px) {
-        margin-right: 40px;
-    }
-}
-
-.reviews__article-foto-picture {
-    margin-bottom: 24px;
 }
 
 .reviews__article-foto-img {
-    // margin-bottom: 24px;
-    @media screen and (min-width: 1680px) {
-        margin-bottom: 8px;
-    }
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.reviews__article-foto-link {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
 }
 
 .reviews-icon {
     fill: #436EAB;
-}
-
-.reviews__article-feedback {
-    @media screen and (min-width: 768px) {
-        padding-right: 4px;
-    }
 }
 
 .reviews__article-feedback-name {
@@ -83,15 +48,6 @@
     text-align: center;
     color: var(--accent-color);
     margin-bottom: 16px;
-    @media screen and (min-width: 768px) {
-        @include font (800, 20px, 24px);
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    @media screen and (min-width: 1680px) {
-        @include font (800, 30px, 37px);
-        margin-bottom: 8px;
-    }
 }
 
 .reviews__article-feedback-university {
@@ -100,45 +56,24 @@
     text-align: center;
     color: var(--color-light-grey);
     margin-bottom: 16px;
-    @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    @media screen and (min-width: 1680px) {
-        @include font (500, 14px, 17px);
-        width: 482px;
-    }
 }
 
 .reviews__article-feedback-text {
     @include font (500, 12px, 20px);
     text-align: center;
     color: var(--color-dark-grey);
-    @media screen and (min-width: 768px) {
-        text-align: left;
-    }
-    @media screen and (min-width: 1680px) {
-        @include font (500, 18px, 28px);
-    }
 }
 
 .reviews__article-feedback-link {
     @include font (500, 12px, 20px);
     color: var(--accent-color);
-    @media screen and (min-width: 1680px) {
-        @include font (500, 18px, 28px);
-    }
 }
 
 .reviews__slider {
     display: flex;
     justify-content: center;
     align-items: center;
-    // margin-top: 20px;
     width: 100%;
-    @media screen and (min-width: 1680px) {
-        margin-top: 40px;
-    }
 }
 
 .reviews__slider-list {
@@ -150,16 +85,6 @@
     border-radius: 50%;
     &:nth-child(-n + 2) {
         margin-right: 15px;
-    }
-    @media screen and (min-width: 768px) { 
-        &:not(:last-child) {
-        margin-right: 32px;
-        }
-    }
-    @media screen and (max-width: 767px) {
-        &:nth-child(n + 4) {
-            display: none;
-        }
     }
 }
 
@@ -181,33 +106,149 @@
     fill: var(--accent-color);
 }
 
-
 .right-btn {
     position: absolute;
     bottom: 10px;
     right: 20px;
-    @media screen and (min-width: 768px) { 
-        right: 36px;
-        top: 50%;
-    }
-    @media screen and (min-width: 1680px) { 
-        right: 0;
-    }
 }
 
 .left-btn {
     position: absolute;
     bottom: 10px;
     left: 20px;
-    @media screen and (min-width: 768px) { 
-        left: 36px;
-        top: 50%;
-    }
-    @media screen and (min-width: 1680px) { 
-        left: 0;
-    }
 }
 
 .activ:hover {
     border: 1px solid var(--accent-color);
+}
+
+
+@media screen and (max-width: 767px) {
+    .reviews__slider-list__item {
+        &:nth-child(n + 4) {
+            display: none;
+        }
+    }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+    .swiper {
+        margin-bottom: 20px;
+    }
+
+    .reviews__article {
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 49px 40px 49px;
+        margin: 0 auto;
+    }
+
+    .reviews-container__title {
+        width: 100%;
+        margin-bottom: 40px;
+        @include font (800, 26px, 34px);
+    }
+
+    .reviews__article-foto {
+        margin-bottom: 0;
+        min-width: 150px;
+        margin-right: 44px;
+        justify-content: flex-start;
+    }
+
+    .reviews__article-foto-link {
+        margin-top: 20px;
+    }
+
+    .reviews__article-feedback {
+        padding-right: 4px;
+    }
+
+    .reviews__article-feedback-name {
+        @include font (800, 20px, 24px);
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .reviews__article-feedback-university {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .reviews__article-feedback-text {
+        text-align: left;
+    }
+
+    .reviews__slider-list__item {
+        &:not(:last-child) {
+            margin-right: 32px;
+    }
+}
+
+    .right-btn {
+        right: 36px;
+        top: 50%;
+    }
+
+    .left-btn {
+        left: 36px;
+        top: 50%;
+    }
+}
+
+
+// 1680+
+@media screen and (min-width: 1680px) {
+    .reviews-container {
+        width: 1203px;
+        padding: 0 57px 0 58px;
+    }
+
+    .reviews__article {
+        padding: 60px 111px 60px 81px;
+    }
+
+    .reviews-container__title {
+        @include font (800, 46px, 60px);
+    }
+
+    .reviews__article-foto {
+        margin-right: 40px;
+    }
+
+    .reviews__article-foto-img {
+        margin-bottom: 8px;
+    }
+
+    .reviews__article-feedback-name {
+        @include font (800, 30px, 37px);
+        margin-bottom: 8px;
+    }
+
+    .reviews__article-feedback-university {
+        @include font (500, 14px, 17px);
+        width: 482px;
+    }
+
+    .reviews__article-feedback-text {
+        @include font (500, 18px, 28px);
+    }
+
+    .reviews__article-feedback-link {
+        @include font (500, 18px, 28px);
+    }
+
+    .reviews__slider {
+        margin-top: 40px;
+    }
+
+    .right-btn {
+        right: 0;
+    }
+
+    .left-btn {
+        left: 0;
+    }
 }
