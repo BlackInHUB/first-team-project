@@ -212,20 +212,20 @@
         padding: 0 57px 0 58px;
     }
 
+    .swiper {
+        margin-bottom: 40px;
+    }
+
     .reviews__article {
         padding: 60px 111px 60px 81px;
     }
 
+    .reviews__article-foto-link {
+        margin-top: 8px;
+    }
+
     .reviews-container__title {
         @include font (800, 46px, 60px);
-    }
-
-    .reviews__article-foto {
-        margin-right: 40px;
-    }
-
-    .reviews__article-foto-img {
-        margin-bottom: 8px;
     }
 
     .reviews__article-feedback-name {
@@ -246,8 +246,10 @@
         @include font (500, 18px, 28px);
     }
 
-    .reviews__slider {
-        margin-top: 40px;
+    .reviews__slider-list__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
     }
 
     .right-btn {
