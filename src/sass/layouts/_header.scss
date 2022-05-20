@@ -1,3 +1,13 @@
+.logo__icon-mobile {
+    transition: transform 250ms linear;
+
+    .logo:hover &,
+    .logo:focus & {
+        transform: scale(1.1);
+    }
+}
+
+
 .nav-list {
     display: flex;
 }
@@ -83,6 +93,15 @@
 
     .logo__icon-tablet {
         display: block;
+    }
+
+    .logo__icon-tablet {
+        transition: transform 250ms linear;
+
+        .logo:hover &,
+        .logo:focus & {
+            transform: scale(1.1);
+        }
     }
 }
 
